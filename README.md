@@ -1,35 +1,34 @@
 # Stellar Network
 
-Ideas and a working model for **self-sufficiency kits** — Starlink first, then solar, storage, heat-to-electric, habitat, and food — funded by a transparent token that is earned from energy, data, and compute.
+Rural **self-sufficiency kits** in cash: Starlink first, then a 400 W panel, a second-life pack, a transfer switch. Habitat is [CHOAM](https://github.com/Dastille/CHOAM-initiative), not a Starship sticker.
 
-This repo is a public sketch, not a company, not a SpaceX or xAI product, and not a financial instrument. Numbers are illustrative.
+This repo is a public sketch, not a company, not a SpaceX or xAI product, and not a financial instrument.
 
-## What it is
+## What it is (v2.2)
 
-Rural and underserved households still pay too much for unreliable power and connectivity. Stellar Network proposes:
+1. **Entry:** Starlink. Canada 2026: Residential 100 is about **$70 CAD/month**; hardware **$0** on a 12-month hook, or **$499** to buy the kit.
+2. **Expansions, in dollars:** 400 W solar (~$650), 10 kWh used pack + BMS (~$2,700), transfer switch + ESA (~$800). Volunteer install.
+3. **Out:** thermoelectric generators as household kWh (3–5% conversion does not yield 60 W modules from a heat store). **Out:** a household token that funds kits (redeemable hardware is a security). **Out:** Starship-class habitats — that is CHOAM.
 
-1. A **free entry kit**: a Starlink terminal, an app, and a way to earn tokens.
-2. **Earned expansions**: 400 W solar, used-EV batteries (~10 kWh), thermoelectric generators with heat storage, methane backup — installed by volunteers, paid in tokens with a bounded burn.
-3. A **long-term habitat path**: flat-packed Starship-class modules (200–500 sq ft) with integrated power and hydroponics.
-4. An **xAI guardian** concept: usage optimization, token-supply regulation, fraud resistance over the same link.
+See [whitepaper/whitepaper.md](whitepaper/whitepaper.md) for the older token sketch. Treat it as history.
 
-See [whitepaper/whitepaper.md](whitepaper/whitepaper.md).
+## Cash sketch (not a coin)
 
-## Token sketch (not a coin sale)
+| Line | CAD |
+| --- | ---: |
+| Starlink kit (if not rental) | 499 |
+| Starlink Residential 100, yearly | 840 |
+| 400 W panel + mount | 650 |
+| 10 kWh second-life + BMS | 2,700 |
+| Transfer switch + ESA | 800 |
 
-| Action | Effect |
-| --- | --- |
-| Share 1 kWh, spare compute, or consented data | Earn 1 token |
-| Redeem an upgrade | Spend tokens; 5–15% burn, hard-capped so supply cannot collapse |
-| Household savings target | ~$50–$100 / month on internet + energy |
-
-Burn is a **funding valve**, not a scarcity stunt. Supply is self-regulated; users can veto rule changes.
+A 400 W panel at ~1.2 kWh/day is ~36 kWh/month. At $0.14 that is about **$5**. It does not pay the Starlink invoice. The kit is connectivity plus a night load.
 
 ## Status
 
-- Whitepaper v2.1 (placeholders removed, claims labelled illustrative)
-- Concept art in-repo (`grok_image_*.jpg`) — treat as mood, not product photography
-- No firmware, no contracts, no production app in this repository
+- Kit BOM v2.2 (token and TEG removed from the working model)
+- Whitepaper v2.1 left in place as the prior sketch
+- Concept art in-repo (`grok_image_*.jpg`) — mood, not engineering
 
 ## Contribute
 
