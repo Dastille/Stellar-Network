@@ -1,0 +1,37 @@
+# Starlink Canada page text captured from the audit box (headless Chromium via Playwright).
+# Lines matching /upfront|hardware|install|CA\$/ only. Times are UTC (EDT = UTC-4).
+
+## Render 1: full innerText, 2026-10-18T06:10:42Z (02:10 EDT), locale en-CA, https://www.starlink.com/ca/residential
+=== https://www.starlink.com/ca/residential @ 2026-10-18T06:10:42.976Z
+No upfront hardware cost in select areas.
+CA$75
+
+## Render 2: 2026-10-18T06:44Z (02:44 EDT), locales en-CA and en-US
+=== en-CA https://www.starlink.com/ca/residential @ 2026-10-18T06:44:40.445Z
+No upfront hardware cost in select areas.
+CA$75
+CA$75
+CA$115
+Home Pro Install Included
+CA$150
+=== en-CA https://www.starlink.com/ca/service-plans @ 2026-10-18T06:44:46.934Z
+CA$75
+CA$115
+CA$150
+CA$75
+CA$110
+CA$200
+=== en-US https://www.starlink.com/ca/residential @ 2026-10-18T06:44:53.980Z
+CA$75
+CA$75
+CA$75
+CA$115
+Home Pro Install Included
+CA$150
+=== en-US https://www.starlink.com/ca/service-plans @ 2026-10-18T06:45:00.518Z
+CA$75
+CA$115
+CA$150
+CA$75
+CA$110
+CA$200

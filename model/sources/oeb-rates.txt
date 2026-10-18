@@ -1,0 +1,10 @@
+# Source: Ontario Energy Board, Electricity rates
+# URL: https://oeb.ca/consumer-information-and-protection/electricity-rates
+# Accessed: 2026-10-18 03:00 America/New_York (EDT)
+# Method: WebFetch text extraction of the public page
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+The TOU, ULO and Tiered prices set by the OEB for November 1, 2025, are shown in the table below. View historical electricity prices.
+[...]
+| Tier 1 | Residential – first 1,000 kWh/month Non-residential – first 750 kWh/month | Residential – first 600 kWh/month Non-residential – first 750 kWh/month | 12.0 |
+| Tier 2 | Residential – for electricity used above 1,000 kWh/month Non-residential – for electricity used above 750 kWh/month | Residential – for electricity used above 600 kWh/month Non-residential – for electricity used above 750 kWh/month | 14.2 |

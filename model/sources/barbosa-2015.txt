@@ -1,0 +1,11 @@
+# Source: Barbosa et al. (2015), Comparison of Land, Water, and Energy Requirements of Lettuce Grown Using Hydroponic vs. Conventional Agricultural Methods, IJERPH 12(6)
+# URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC4483736/
+# Accessed: 2026-10-18 (page retrieved 2026-10-18) America/New_York (EDT)
+# Method: curl of the PMC full text, HTML tags stripped
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+Yields of lettuce per greenhouse unit (815 m2) of 41 ± 6.1 kg/m2/y had water and energy demands of 20 ± 3.8 L/kg/y and 90,000 ± 11,000 kJ/kg/y (±standard deviation), respectively.
+[...]
+followed by the energy used for the supplemental artificial lighting at 15,000 ± 2100 kJ/kg/y.
+[...]
+The energy use related to supplemental artificial lighting was determined by assuming a 24-h photoperiod and a recommended daily Photosynthetically Active Radiation (PAR) of 17 mol/m2/day of both natural and supplemental light [5], for optimal lettuce production. It was also assumed that half of the required radiation could be obtained from natural lighting.

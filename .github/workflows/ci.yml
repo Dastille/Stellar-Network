@@ -13,14 +13,22 @@ jobs:
         with:
           components: rustfmt, clippy
       - run: cargo fmt --all -- --check
-      - run: cargo clippy --all-targets -- -D warnings
+      - name: clippy (all targets, pedantic, warnings denied)
+        run: cargo clippy --all-targets -- -D warnings -W clippy::pedantic
       - run: cargo test --all-targets
-      - name: paper block matches model output
+      - name: doctests
+        run: cargo test --doc
+      - name: documents equal a fresh render; every other number allowlisted
         run: cargo test --test paper_sync
+      - name: committed documents are up to date (binary check)
+        run: cargo run -q -p stellar-model -- --check
       - uses: taiki-e/install-action@v2
         with:
           tool: cargo-audit
       - run: cargo audit
+      - uses: EmbarkStudios/cargo-deny-action@v2
+        with:
+          command: check
   msrv:
     runs-on: ubuntu-latest
     steps:

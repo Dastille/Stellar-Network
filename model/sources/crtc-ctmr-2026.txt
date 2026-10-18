@@ -1,0 +1,9 @@
+# Source: CRTC, Canadian Telecommunications Market Report 2026
+# URL: https://crtc.gc.ca/eng/publications/reports/PolicyMonitoring/2026/ctmr.htm
+# Accessed: 2026-10-18 03:07 America/New_York (EDT)
+# Method: WebFetch text extraction of the public page
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+They have helped to expand broadband coverage to over 80% of the population in rural Canada – a 30 percentage point increase since 2020.
+[...]
+More than 96% of Canadians have access to USO-level Internet.

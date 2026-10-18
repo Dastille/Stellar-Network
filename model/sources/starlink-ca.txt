@@ -1,0 +1,62 @@
+# Source: Starlink Canada residential page (en-CA render)
+# URL: https://www.starlink.com/ca/residential
+# Accessed: 2026-10-18 02:10 America/New_York (EDT) (06:10:42Z); re-rendered 02:44 EDT with the same price text
+# Method: headless Chromium (Playwright) document innerText, locale en-CA. Raw capture lines: evidence/starlink-ca-2026-10-18.txt
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+Business
+Fast, reliable home internet
+No upfront hardware cost in select areas.
+SERVICE STARTING AT
+
+CA$75
+
+/mo
+
+Address
+Address
+
+ 
+
+Get Started
+Stream, work from home, game & more
+Residential - 100 Mbps
+
+Reliable, affordable home internet service for seamless connectivity.
+
+Unlimited Data
+Good Wi-Fi
+SERVICE STARTING AT
+
+CA$75
+
+/mo
+
+Residential - 200 Mbps
+
+Fast, reliable internet service for everyday home use.
+
+Unlimited Data
+Great Wi-Fi
+SERVICE STARTING AT
+
+CA$115
+
+/mo
+
+Residential - Max
+
+Our best performing home internet service with maximum speeds available.
+
+Up to 400+ Mbps
+Unlimited Data
+Best Wi-Fi
+Home Pro Install Included
+Additional Kit: Starlink Mini for Internet on the Go
+SERVICE STARTING AT
+
+CA$150
+
+/mo
+[...]
+Through the world's most advanced satellite constellation, Starlink delivers reliable broadband connectivity across 160+ countries, territories, and other markets around the world, including to locations where high-speed internet has traditionally been too expensive, unreliable, or entirely unavailable.

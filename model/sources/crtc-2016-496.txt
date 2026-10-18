@@ -1,0 +1,9 @@
+# Source: Telecom Regulatory Policy CRTC 2016-496
+# URL: https://crtc.gc.ca/eng/archive/2016/2016-496.htm
+# Accessed: 2026-10-18 03:06 America/New_York (EDT)
+# Method: WebFetch text extraction of the public page
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+Pursuant to its legislative mandate, the Commission is establishing the following universal service objective: Canadians, in urban areas as well as in rural and remote areas, have access to voice services and broadband Internet access services, on both fixed and mobile wireless networks. To measure the successful achievement of this objective, the Commission has established several criteria, including,
+
+- Canadian residential and business fixed broadband Internet access service subscribers should be able to access speeds of at least 50 megabits per second (Mbps) download and 10 Mbps upload, and to subscribe to a service offering with an unlimited data allowance; and
