@@ -1,0 +1,14 @@
+[package]
+name = "stellar-model"
+version = "3.0.0"
+edition = "2021"
+rust-version = "1.74"
+license = "AGPL-3.0-only"
+description = "Reproducible first-principles calculations behind the Stellar Network whitepaper (Starlink cost, PV, TEG, hydroponics)."
+publish = false
+
+[dependencies]
+
+[[bin]]
+name = "stellar-report"
+path = "src/main.rs"

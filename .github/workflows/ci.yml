@@ -1,0 +1,29 @@
+name: ci
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  rust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt --all -- --check
+      - run: cargo clippy --all-targets -- -D warnings
+      - run: cargo test --all-targets
+      - name: paper block matches model output
+        run: cargo test --test paper_sync
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-audit
+      - run: cargo audit
+  msrv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.74
+      - run: cargo test

@@ -1,38 +1,37 @@
 # Stellar Network
 
-Rural **self-sufficiency kits** in cash: Starlink first, then a 400 W panel, a second-life pack, a transfer switch. Habitat is [CHOAM](https://github.com/Dastille/CHOAM-initiative), not a Starship sticker.
+Ideas for self-sufficiency and megacorporation-era growth (Ashlynn, 2025).
 
-This repo is a public sketch, not a company, not a SpaceX or xAI product, and not a financial instrument.
+**The vision (Ashlynn's v2.0, kept as the thesis):**
+1. A **free, fully installed Starlink kit** for rural and self-sufficiency-seeking households worldwide.
+2. Households **earn tokens** by sharing energy, data and compute.
+3. Tokens pay for expansions: 400 W solar, used EV batteries, **TEGs** with heat storage, **methane backup**.
+4. Long term: **Starship-class habitat modules** and **hydroponic food**.
 
-## What it is (v2.2)
+**The paper is the source of truth:** [whitepaper/whitepaper.md](whitepaper/whitepaper.md) (v3.0). This README summarizes it. Claim statuses are in [CLAIMS.md](CLAIMS.md).
 
-1. **Entry:** Starlink. Canada 2026: Residential 100 is about **$70 CAD/month**; hardware **$0** on a 12-month hook, or **$499** to buy the kit.
-2. **Expansions, in dollars:** 400 W solar (~$650), 10 kWh used pack + BMS (~$2,700), transfer switch + ESA (~$800). Volunteer install.
-3. **Out:** thermoelectric generators as household kWh (3–5% conversion does not yield 60 W modules from a heat store). **Out:** a household token that funds kits (redeemable hardware is a security). **Out:** Starship-class habitats — that is CHOAM.
+This is an independent proposal. It is not a SpaceX, Starlink or xAI product and is not endorsed by them.
 
-See [whitepaper/whitepaper.md](whitepaper/whitepaper.md) for the older token sketch. Treat it as history.
+## What the numbers say (from `model/`, asserted by `cargo test`)
 
-## Cash sketch (not a coin)
+- **Free kit cost.** Starlink Residential 100 in Canada is **CA$75**/mo (starlink.com/ca, read 2026-10-18). Free service therefore costs a funder **$900** per household-year, or **$900,000,000** per year at 1M households.
+- **Solar.** A 400 W panel yields **1.27 kWh/day** in Toronto, worth **$4.65/mo** at Ontario Tier 1.
+- **TEGs.** Her 1.8 kWh/day from 5 × 60 W TEGs needs about **45 kWh(th)/day** of 300 °C heat at the datasheet's 4.0% efficiency. **0.56 kWp** of PV gives the same energy. TEGs stay in the paper as a stove co-generator idea, not as primary supply.
+- **Hydroponic food.** 50 lb/week of greens needs about **28.8 m2** of growing area and **13.5 kWh/day** for lighting alone.
+- **Token.** An earn-and-redeem token is likely a security under CSA Staff Notice 46-308. The paper proposes a redesign and marks the question unresolved.
+- **Habitat and methane.** No Starship habitat product exists. Methane backup is unverified. Both are kept as goals, with the habitat path linked to [CHOAM](https://github.com/Dastille/CHOAM-initiative).
 
-| Line | CAD |
-| --- | ---: |
-| Starlink kit (if not rental) | 499 |
-| Starlink Residential 100, yearly | 840 |
-| 400 W panel + mount | 650 |
-| 10 kWh second-life + BMS | 2,700 |
-| Transfer switch + ESA | 800 |
+## Reproduce
 
-A 400 W panel at ~1.2 kWh/day is ~36 kWh/month. At $0.14 that is about **$5**. It does not pay the Starlink invoice. The kit is connectivity plus a night load.
+```sh
+cargo test                        # asserts the paper's table == model output
+cargo run -q -p stellar-model     # prints the table embedded in the paper
+```
 
 ## Status
 
-- Kit BOM v2.2 (token and TEG removed from the working model)
-- Whitepaper v2.1 left in place as the prior sketch
-- Concept art in-repo (`grok_image_*.jpg`) — mood, not engineering
-
-## Contribute
-
-Open an issue for field data (rural kWh, last-mile install cost, volunteer labour hours). Pull requests that replace guesses with sourced numbers are welcome.
+- Whitepaper v3.0 (restored vision, sourced, with limitations)
+- Concept art (`grok_image_*.jpg`) conveys mood, not engineering
 
 License: [AGPL-3.0](LICENSE)
 
