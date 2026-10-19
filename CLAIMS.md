@@ -17,10 +17,10 @@ Access date for every source: 2026-10-18 (America/New_York).
 
 | # | Claim | Source (URL + locator) or calculation | Status |
 | --- | --- | --- | --- |
-| 1 | Starlink Canada Residential 100 / 200 / Max = CA$75 / $115 / $150 per month | https://www.starlink.com/ca/residential plan cards, same prices as https://www.starlink.com/ca/service-plans "MONTHLY SERVICE PLANS" (headless Chromium, en-CA, 02:10 and 02:44 EDT); matches Cloudy's 2026-10-18 log | verified |
+| 1 | Starlink Canada Residential 100 / 200 / Max = CA$75 / $115 / $150 per month; "SERVICE STARTING AT"; Residential 100 and 200 "only available in select areas" | https://www.starlink.com/ca/residential plan cards and https://www.starlink.com/ca/service-plans "Monthly service plans" (headless Chrome, en-CA; 2026-10-18 02:10 and 02:44 EDT; re-rendered 2026-10-19 09:28 and 09:32 EDT); matches Cloudy's logs | verified |
 | 2 | "No upfront hardware cost in select areas" | https://www.starlink.com/ca/residential hero text: present in en-CA renders at 02:10 and 02:44 EDT; absent in an en-US render at 02:44 EDT and in Cloudy's render at 02:32 EDT; qualifying areas not listed. Raw capture lines: `evidence/starlink-ca-2026-10-18.txt` | unverified (for any given household, because the page text varies by render) |
 | 3 | Starlink serves 160+ countries, territories and other markets | https://www.starlink.com/ca/residential | verified |
-| 4 | Free service only: $900/household-yr; $900,000 / $90,000,000 / $900,000,000 for 1k / 100k / 1M households; hardware and installation excluded | `model` K1–K6 | derived (service only) |
+| 4 | Free service only: at least $900/household-yr (Residential 100, select areas only); $900,000 / $90,000,000 / $900,000,000 for 1k / 100k / 1M households; Max-plan bound $1,800/household-yr, $1,800,000,000 at 1M; hardware and installation excluded | `model` K1–K9 | derived (service only; Residential 100 total is a floor) |
 | 5 | $499 kit price (v2.2 README) | not shown on the pages read | unverified (not used) |
 | 6 | "Home Pro Install Included" on Residential Max only | https://www.starlink.com/ca/residential, Residential - Max card | verified |
 | 7 | Toronto PV 1,163 kWh/kWp/yr; December 51 kWh/kWp; insolation 4.25 (annual) / 2.21 (Dec) kWh/m²/day | NRCan municip_potentiel-potential.csv and municip_kWh.csv, Ontario/Toronto, latitude tilt | verified |

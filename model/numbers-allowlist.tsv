@@ -62,7 +62,6 @@ paper	1	the Ontario Tier-1 commodity price	id	tariff tier name (Tier 1)
 paper	499	- **Hardware price.** The $499 Starlink kit pr	author	v2.2 README rewrite figure (not hers); not used
 paper	5	## 5. Implementation	id	section heading number
 paper	100	- **Growth.** 100K+ households ($	author	Ashlynn v2.0 (commit e812700), quoted as her figure (growth phase)
-paper	1	unteer installers. Reaching 1M+ ($ /yr servic	author	Ashlynn v2.0 (commit e812700), quoted as her figure
 paper	1	X/xAI network benefits at "$1B+ from 1M users	author	Ashlynn v2.0 (commit e812700), quoted as her figure
 paper	1	work benefits at "$1B+ from 1M users"; that f	author	Ashlynn v2.0 (commit e812700), quoted as her figure
 paper	6	## 6. Token: what CS	id	section heading number
@@ -140,7 +139,6 @@ readme	3	3. Tokens pay for	id	numbered-list item
 readme	4	4. Long term: **S	id	numbered-list item
 readme	100	ost.** Starlink Residential 100 in Canada is **	id	Starlink plan name (Residential 100 / 200)
 readme	2026-10-18	*/mo (starlink.com/ca, read 2026-10-18). Free *service	date	date or year
-readme	1	year, or **$ ** per year at 1M households. Ha	author	Ashlynn v2.0 (commit e812700), quoted as her figure
 readme	1	h **$ /mo** at Ontario Tier 1.	id	tariff tier name (Tier 1)
 readme	46-308	n.** Under CSA Staff Notice 46-308, tokens given t	id	CSA Staff Notice number
 readme	3.0	License: [AGPL-3.0](LICENSE)	id	licence version (AGPL-3.0)
@@ -170,11 +168,6 @@ claims	3	± 11,000 kJ/kg/y", and §3 reads "suppleme	id	cross-reference number
 claims	2100	± 2100 kJ/kg/y". **Pas	quote	[Barbosa-2015] reported standard deviation
 claims.tsv	100	Starlink Canada Residential 100 / 200 / Max = C	id	Starlink plan name (Residential 100 / 200)
 claims.tsv	200	nk Canada Residential 100 / 200 / Max = CA$	id	Starlink plan name (Residential 100 / 200)
-claims.tsv	02	 (headless Chromium, en-CA, 02:10 and 02:44 ED	date	time of day (EDT, or UTC where marked Z)
-claims.tsv	10	eadless Chromium, en-CA, 02:10 and 02:44 EDT);	date	time of day (EDT, or UTC where marked Z)
-claims.tsv	02	 Chromium, en-CA, 02:10 and 02:44 EDT); matche	date	time of day (EDT, or UTC where marked Z)
-claims.tsv	44	romium, en-CA, 02:10 and 02:44 EDT); matches C	date	time of day (EDT, or UTC where marked Z)
-claims.tsv	2026-10-18	2:44 EDT); matches Cloudy's 2026-10-18 log	date	date or year
 claims.tsv	100	Residential - 100 Mbps || CA$	id	Starlink plan name (Residential 100 / 200)
 claims.tsv	200	|| Residential - 200 Mbps || CA$	id	Starlink plan name (Residential 100 / 200)
 claims.tsv	02	present in en-CA renders at 02:10 and 02:44 ED	date	time of day (EDT, or UTC where marked Z)
@@ -190,7 +183,6 @@ claims.tsv	160	Starlink serves 160+ countries, ter	quote	[Starlink-CA] "160+ cou
 claims.tsv	160	160+ countries, ter	quote	[Starlink-CA] "160+ countries, territories, and other markets"
 claims.tsv	1	for 1k / 100k / 1M ho	author	Ashlynn v2.0 (commit e812700), quoted as her figure
 claims.tsv	100	for 1k / 100k / 1M household	author	Ashlynn v2.0 (commit e812700), quoted as her figure (household scale)
-claims.tsv	1	for 1k / 100k / 1M households; ha	author	Ashlynn v2.0 (commit e812700), quoted as her figure
 claims.tsv	499	$499 kit price (v2.2	author	v2.2 README rewrite figure (not hers); not used
 claims.tsv	802	tario,Toronto,Annual/Annuel,802, , || Ontario/O	quote	[NRCan-PV] municip_potentiel-potential.csv Toronto row (vertical-tilt column), quoted as an evidence needle
 claims.tsv	53	o,Toronto,December/Décembre,53, , || Ontario/O	quote	[NRCan-PV] municip_potentiel-potential.csv Toronto row (vertical-tilt column), quoted as an evidence needle
@@ -248,3 +240,29 @@ claims.tsv	30	1M users"; "Green impact 20–30%"	author	Ashlynn v2.0 (commit e81
 claims.tsv	0	 || credits are reduced to $0	quote	[OEB-NM] "credits are reduced to $0"
 paper	6	s under CSA 46-308 (section 6)	id	section cross-reference
 claims.tsv	100	v2.0 "save $ –100/month", "$600/y	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	100	 cheapest plan, Residential 100, is "only avail	id	Starlink plan name (Residential 100 / 200)
+paper	1	ousehold-year, or $ B/yr at 1M households (K3	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	100	d-yr (K1 floor, Residential 100 in select areas	id	Starlink plan name (Residential 100 / 200)
+paper	100	at" prices, and Residential 100 and 200 are "on	id	Starlink plan name (Residential 100 / 200)
+paper	200	es, and Residential 100 and 200 are "only avail	id	Starlink plan name (Residential 100 / 200)
+paper	1	unteer installers. Reaching 1M+ ($ –$ /yr ser	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+readme	1	year, or **$ ** per year at 1M households. Th	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+readme	100	arting at", and Residential 100 is "only availa	id	Starlink plan name (Residential 100 / 200)
+readme	1	ear, or **$ B** per year at 1M households. Ha	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+claims.tsv	100	E STARTING AT"; Residential 100 and 200 "only a	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	200	NG AT"; Residential 100 and 200 "only available	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	2026-10-18	s" (headless Chrome, en-CA; 2026-10-18 02:10 and 02:44	date	date or year
+claims.tsv	02	s Chrome, en-CA; 2026-10-18 02:10 and 02:44 ED	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	10	hrome, en-CA; 2026-10-18 02:10 and 02:44 EDT; 	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	02	en-CA; 2026-10-18 02:10 and 02:44 EDT; re-rend	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	44	CA; 2026-10-18 02:10 and 02:44 EDT; re-rendere	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	2026-10-19	 and 02:44 EDT; re-rendered 2026-10-19 09:28 and 09:32	date	date or year
+claims.tsv	09	EDT; re-rendered 2026-10-19 09:28 and 09:32 ED	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	09	ndered 2026-10-19 09:28 and 09:32 EDT); matche	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	32	red 2026-10-19 09:28 and 09:32 EDT); matches C	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	100	 STARTING AT || Residential 100 Mbps and Reside	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	100	 /household-yr (Residential 100, select areas o	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	1	at 1M; hardware and 	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+claims.tsv	100	; service only; Residential 100 total is a floo	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	28	; re-rendered 2026-10-19 09:28 and 09:32 EDT);	date	time of day (EDT)
+claims.tsv	200	al 100 Mbps and Residential 200 Mbps plans are 	id	Starlink plan name (Residential 200)

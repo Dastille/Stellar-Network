@@ -351,15 +351,30 @@ fn starlink_rows(o: &mut Rows) -> Result<(), ModelError> {
             &format!("CA${m:.0} x 12"),
         );
     }
-    let per_year = service_cost_per_year(STARLINK_CA_RES100, 1.0)?;
-    for (id, n) in ["K4", "K5", "K6"].into_iter().zip(HOUSEHOLDS) {
-        let count = grouped(n, 0);
-        o.row(
-            id,
-            &format!("Free service for {count} households (Res 100), service only, per year"),
-            &money(service_cost_per_year(STARLINK_CA_RES100, n)?),
-            &format!("{} x {count}", grouped(per_year, 0)),
-        );
+    // Res 100 is the cheapest plan but "only available in select areas", and
+    // every price is "SERVICE STARTING AT": K4-K6 are floors. Max is the
+    // highest residential price: K7-K9 bound the cost if no Res 100 is offered.
+    for (ids, plan, m, kind) in [
+        (["K4", "K5", "K6"], "Res 100", STARLINK_CA_RES100, "floor"),
+        (
+            ["K7", "K8", "K9"],
+            "Res Max",
+            STARLINK_CA_MAX,
+            "Max-plan bound",
+        ),
+    ] {
+        let per_year = service_cost_per_year(m, 1.0)?;
+        for (id, n) in ids.into_iter().zip(HOUSEHOLDS) {
+            let count = grouped(n, 0);
+            o.row(
+                id,
+                &format!(
+                    "Free service for {count} households ({plan}, {kind}), service only, per year"
+                ),
+                &money(service_cost_per_year(m, n)?),
+                &format!("{} x {count}", grouped(per_year, 0)),
+            );
+        }
     }
     Ok(())
 }
@@ -638,6 +653,18 @@ pub fn values() -> Result<Vec<Value>, ModelError> {
             ),
         ),
     ];
+    v.extend(service_values()?);
+    v.extend(her_inputs());
+    v.extend(comparisons(
+        p.value_cad_per_month,
+        HER_SPEND_CAD_PER_YR / load,
+    ));
+    Ok(v)
+}
+
+/// Funder service cost: Residential 100 floor (K4-K6) and Max-plan bound (K3, K9).
+fn service_values() -> Result<Vec<Value>, ModelError> {
+    let mut v = Vec::new();
     for (key, n) in [
         ("k4.total", HOUSEHOLDS[0]),
         ("k5.total", HOUSEHOLDS[1]),
@@ -648,10 +675,19 @@ pub fn values() -> Result<Vec<Value>, ModelError> {
             grouped(service_cost_per_year(STARLINK_CA_RES100, n)?, 0),
         ));
     }
-    v.extend(her_inputs());
-    v.extend(comparisons(
-        p.value_cad_per_month,
-        HER_SPEND_CAD_PER_YR / load,
+    let max_1m = service_cost_per_year(STARLINK_CA_MAX, HOUSEHOLDS[2])?;
+    v.push(derived(
+        "k3.per_hh",
+        grouped(service_cost_per_year(STARLINK_CA_MAX, 1.0)?, 0),
+    ));
+    v.push(derived("k9.total", grouped(max_1m, 0)));
+    v.push(derived("k9.bn", format!("{:.1}", max_1m / 1e9)));
+    v.push(derived(
+        "k6.bn",
+        format!(
+            "{:.1}",
+            service_cost_per_year(STARLINK_CA_RES100, HOUSEHOLDS[2])? / 1e9
+        ),
     ));
     Ok(v)
 }

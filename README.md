@@ -15,7 +15,7 @@ This is an independent proposal. It is not a SpaceX, Starlink or xAI product and
 
 ## What the numbers say
 
-- **Free kit cost.** Starlink Residential 100 in Canada is **CA$75**/mo (starlink.com/ca, read 2026-10-18). Free *service* therefore costs a funder **$900** per household-year, or **$900,000,000** per year at 1M households. Hardware and installation are not costed: "no upfront hardware cost in select areas" appeared only in some renders of Starlink's page, and the areas are not listed.
+- **Free kit cost.** Starlink Residential 100 in Canada is **CA$75**/mo (starlink.com/ca, read 2026-10-18). Free *service* therefore costs a funder at least **$900** per household-year, or **$900,000,000** per year at 1M households. That is a floor: prices are "starting at", and Residential 100 is "only available in select areas". On Residential Max it is **$1,800** per household-year, or **$1.8B** per year at 1M households. Hardware and installation are not costed: "no upfront hardware cost in select areas" appeared only in some renders of Starlink's page, and the areas are not listed.
 - **Solar.** A 400 W panel yields **1.27 kWh/day** in Toronto, worth **$4.65/mo** at Ontario Tier 1.
 - **TEGs.** Her 1.8 kWh/day from 5 × 60 W TEGs needs about **45 kWh(th)/day** of 300 °C heat at the datasheet's 4.0% efficiency. **0.56 kWp** of PV gives the same energy. TEGs stay in the paper as a vision; stove co-generation is a goal with no supporting stove data yet, not a feasible design.
 - **Hydroponic food.** 50 lb/week of greens needs about **28.8 m2** of growing area and **13.5 kWh/day** for lighting alone.

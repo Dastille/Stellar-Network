@@ -6,7 +6,7 @@
 
 ## Abstract
 
-**Problem.** Rural and self-sufficiency-seeking households, worldwide (her v2.0 scope), lack affordable connectivity, power and food security. In Canada, over 80% of the rural population now has broadband coverage [CRTC-2026], against the CRTC's 50/10 Mbps objective [CRTC-2016-496], which leaves the rest underserved. **Proposal (Ashlynn, v2.0).** Give each household a **free, fully installed Starlink kit**. The household then **earns tokens** by sharing energy, data and compute, and spends them on expansions: 400 W solar, a used 10 kWh EV battery, **thermoelectric generators (TEGs)** with heat storage, and **methane backup**. Over time the path extends to **Starship-class habitat modules** of 200–500 sq ft and **hydroponic food** of about 50 lb/week of greens, all installed by volunteers and governed by guardian software and user vetoes. **Method.** We run a five-step requirements review and a first-principles derivation of each element. The inputs are the live starlink.com/ca price list, NRCan solar tables, the OEB tariff, a commercial TEG datasheet [Tecteg], and a peer-reviewed hydroponics energy model [Barbosa-2015]. **Results.** Free *service* costs a funder CA$900 per household-year, or $900,000,000/yr at 1M households (K1, K6); hardware and installation are not costed, because no per-household price was verified. A 400 W panel yields 1.27 kWh/day in Toronto (0.66 in December), worth $4.65/mo. Her TEG figure of 1.8–3.6 kWh/day is the nameplate arithmetic of 5–10 × 60 W × 6 h. At the datasheet's 4.0% efficiency it needs 45–90 kWh of 300 °C heat per day, while 0.56–1.13 kWp of PV delivers the same energy. 50 lb/week of hydroponic greens needs about 28.8 m² and 13.5 kWh/day for lighting alone. On the token, CSA Staff Notice 46-308 says tokens distributed to users for free "will likely not involve an investment of money", so her earned token, as long as it is never sold, is probably not a security; selling tokens, bundling them with a paid product, or marketing them for trading could change that [CSA-46-308]. All of her ideas are kept. Section 3 states which are feasible now and what would have to change for the rest.
+**Problem.** Rural and self-sufficiency-seeking households, worldwide (her v2.0 scope), lack affordable connectivity, power and food security. In Canada, over 80% of the rural population now has broadband coverage [CRTC-2026], against the CRTC's 50/10 Mbps objective [CRTC-2016-496], which leaves the rest underserved. **Proposal (Ashlynn, v2.0).** Give each household a **free, fully installed Starlink kit**. The household then **earns tokens** by sharing energy, data and compute, and spends them on expansions: 400 W solar, a used 10 kWh EV battery, **thermoelectric generators (TEGs)** with heat storage, and **methane backup**. Over time the path extends to **Starship-class habitat modules** of 200–500 sq ft and **hydroponic food** of about 50 lb/week of greens, all installed by volunteers and governed by guardian software and user vetoes. **Method.** We run a five-step requirements review and a first-principles derivation of each element. The inputs are the live starlink.com/ca price list, NRCan solar tables, the OEB tariff, a commercial TEG datasheet [Tecteg], and a peer-reviewed hydroponics energy model [Barbosa-2015]. **Results.** Free *service* costs a funder at least CA$900 per household-year, or $900,000,000/yr at 1M households (K1, K6): Starlink lists every price as "SERVICE STARTING AT", and the cheapest plan, Residential 100, is "only available in select areas" [Starlink-CA]. Where only Residential Max is offered, the cost is CA$1,800 per household-year, or $1.8B/yr at 1M households (K3, K9); hardware and installation are not costed, because no per-household price was verified. A 400 W panel yields 1.27 kWh/day in Toronto (0.66 in December), worth $4.65/mo. Her TEG figure of 1.8–3.6 kWh/day is the nameplate arithmetic of 5–10 × 60 W × 6 h. At the datasheet's 4.0% efficiency it needs 45–90 kWh of 300 °C heat per day, while 0.56–1.13 kWp of PV delivers the same energy. 50 lb/week of hydroponic greens needs about 28.8 m² and 13.5 kWh/day for lighting alone. On the token, CSA Staff Notice 46-308 says tokens distributed to users for free "will likely not involve an investment of money", so her earned token, as long as it is never sold, is probably not a security; selling tokens, bundling them with a paid product, or marketing them for trading could change that [CSA-46-308]. All of her ideas are kept. Section 3 states which are feasible now and what would have to change for the rest.
 
 ## 1. Problem statement and definitions
 
@@ -23,7 +23,7 @@ Deliver to a household, at no upfront cost to it, (a) broadband meeting at least
 
 | Requirement (source) | Question | Decision |
 | --- | --- | --- |
-| Free Starlink kit (Ashlynn v1/v2) | Who pays service after hardware? | **Keep.** Service alone is $900/household-yr (K1); hardware and installation are extra and not costed. The funder must be named: partner, grant or public fund (section 5) |
+| Free Starlink kit (Ashlynn v1/v2) | Who pays service after hardware? | **Keep.** Service alone is $900–$1,800/household-yr (K1 floor, Residential 100 in select areas only; K3 Max-plan bound); hardware and installation are extra and not costed. The funder must be named: partner, grant or public fund (section 5) |
 | Token earned by kWh/data/compute (Ashlynn) | Is it a security? | **Keep the goal; design to stay outside securities law** (section 6). Free distribution likely involves no investment of money; a sale, a paid bundle or trading would change that [CSA-46-308] |
 | 5–10 × 60 W TEGs, 1.8–3.6 kWh/day (Ashlynn) | What heat input does it need? | **Keep as vision.** Infeasible as primary supply (T3–T4). Stove co-generation is a **goal, unverified**: no cited source yet shows a stove holding the datasheet's hot and cold sides (section 3) |
 | Methane backup (Ashlynn) | Feedstock, climate, code? | **Keep; unverified.** No primary source yet on household digesters in Canadian winters |
@@ -39,7 +39,7 @@ Deliver to a household, at no upfront cost to it, (a) broadband meeting at least
 
 | Her idea | Evidence (derived below) | Feasible now? | What would have to change |
 | --- | --- | --- | --- |
-| Free installed Starlink kit | Service CA$75/mo [Starlink-CA]. Hardware: "No upfront hardware cost in select areas" seen in some renders only; areas not listed (section 1). Pro install included only on Residential Max (CA$150/mo) | **Service: yes, if funded. Hardware and install: unverified** | A funder for $900/household-yr of service (K4–K6), plus a quoted hardware and installation price |
+| Free installed Starlink kit | Service CA$75/mo [Starlink-CA]. Hardware: "No upfront hardware cost in select areas" seen in some renders only; areas not listed (section 1). Pro install included only on Residential Max (CA$150/mo) | **Service: yes, if funded. Hardware and install: unverified** | A funder for $900–$1,800/household-yr of service (K4–K9), plus a quoted hardware and installation price |
 | Earn-and-spend token | Free distribution "will likely not involve an investment of money" (situation 13); a finite supply can create an expectation of profit (situation 9); trading on platforms points to resale for profit [CSA-46-308] | **Probably not a security if never sold**; unresolved | Keep credits non-transferable, never sold, not tradable and not redeemable for cash; avoid a scarcity cap; get legal review |
 | TEGs, 1.8–3.6 kWh/day | Needs 45–90 kWh(th)/day at 300 °C (T3a–T4a), or 10.6–40.7 m² of perfect collectors (T3b–T4c) | **No** as primary supply. Stove co-generation: **goal, unverified** | At the rated 300/30 °C, 4 modules would give 58 W while passing 1.46 kW of heat. Needs a cited stove hot-side temperature, heat flux and cold-side cooling, or a measured stove-TEG product. Or TEG efficiency well above 4.0% |
 | Methane backup | No primary source yet | **Unverified** | Cold-climate digester data; gas-code compliance |
@@ -57,7 +57,7 @@ Chains (the Chain column below is built from the same constants as the Value col
 - **TEG:** heat = electricity / efficiency, with efficiency = 14.6 W / 365 W at hot side 300 °C and cold side 30 °C [Tecteg]. Collector area = heat / NRCan insolation (4.25 kWh/m²/day annual; 2.21 December). This assumes 100% capture, so it is a lower bound.
 - **Hydroponics:** yield 41 kg/m²/yr and energy 90,000 kJ/kg (lighting 15,000) [Barbosa-2015].
 - **Tariff:** OEB Tier 1 at 12.0 ¢/kWh [OEB-RPP].
-- **Starlink:** CA$75 / $115 / $150 per month, from starlink.com/ca/service-plans, read 2026-10-18 02:10 EDT [Starlink-CA]. K rows cost **service only**.
+- **Starlink:** CA$75 / $115 / $150 per month, from starlink.com/ca/service-plans, read 2026-10-18 02:10 EDT [Starlink-CA]. K rows cost **service only**. Prices are "starting at" prices, and Residential 100 and 200 are "only available in select areas" (starlink.com/ca/service-plans), so K4–K6 are floors and K7–K9 are the Max-plan bound.
 
 <!-- BEGIN GENERATED BY stellar-model (cargo run -q -p stellar-model) -->
 | ID | Quantity | Value | Chain |
@@ -65,9 +65,12 @@ Chains (the Chain column below is built from the same constants as the Value col
 | K1 | Starlink Residential 100, service only, per household-year | $900 | CA$75 x 12 |
 | K2 | Starlink Residential 200, service only, per household-year | $1,380 | CA$115 x 12 |
 | K3 | Starlink Residential Max, service only, per household-year | $1,800 | CA$150 x 12 |
-| K4 | Free service for 1,000 households (Res 100), service only, per year | $900,000 | 900 x 1,000 |
-| K5 | Free service for 100,000 households (Res 100), service only, per year | $90,000,000 | 900 x 100,000 |
-| K6 | Free service for 1,000,000 households (Res 100), service only, per year | $900,000,000 | 900 x 1,000,000 |
+| K4 | Free service for 1,000 households (Res 100, floor), service only, per year | $900,000 | 900 x 1,000 |
+| K5 | Free service for 100,000 households (Res 100, floor), service only, per year | $90,000,000 | 900 x 100,000 |
+| K6 | Free service for 1,000,000 households (Res 100, floor), service only, per year | $900,000,000 | 900 x 1,000,000 |
+| K7 | Free service for 1,000 households (Res Max, Max-plan bound), service only, per year | $1,800,000 | 1,800 x 1,000 |
+| K8 | Free service for 100,000 households (Res Max, Max-plan bound), service only, per year | $180,000,000 | 1,800 x 100,000 |
+| K9 | Free service for 1,000,000 households (Res Max, Max-plan bound), service only, per year | $1,800,000,000 | 1,800 x 1,000,000 |
 | P1 | 400 W panel, annual yield (Toronto) | 465.2 kWh/yr | 0.4 x 1163 |
 | P2 | 400 W panel, mean daily | 1.27 kWh/day | P1 / 365 |
 | P3 | 400 W panel, December daily | 0.66 kWh/day | 0.4 x 51 / 31 |
@@ -102,7 +105,7 @@ Notes:
 ## 5. Implementation plan (hers, with funding named)
 
 - **Beta.** About 1,000 rural users, Starlink only. Service cost to the funder is $900,000/yr (K4), plus hardware and installation (not costed).
-- **Growth.** 100K+ households ($90,000,000/yr service, K5), with volunteer installers. Reaching 1M+ ($900,000,000/yr service, K6) depends on habitats and food becoming real products. Her v2.0 put SpaceX/xAI network benefits at "$1B+ from 1M users"; that figure is unverified.
+- **Growth.** 100K+ households ($90,000,000/yr service, K5), with volunteer installers. Reaching 1M+ ($900,000,000–$1,800,000,000/yr service, K6–K9) depends on habitats and food becoming real products. Her v2.0 put SpaceX/xAI network benefits at "$1B+ from 1M users"; that figure is unverified.
 - **Prototype.** A Starlink demo first, then a habitat/food mock-up during the beta.
 - **Risks.** Supply delays, volunteer burnout and token-market capture. Mitigations: a phased rollout, hard burn caps, and no dilution of household claims.
 
@@ -151,7 +154,7 @@ None of this is implemented. It is a specification to build against.
 
 ## 10. Conclusion
 
-Stellar Network keeps Ashlynn's path: free kit → earned expansions → habitat and food, worldwide. The evidence supports starting with free Starlink service (funded at $900/household-yr, plus hardware and installation still to be priced) and PV. TEGs as primary supply are not feasible; stove co-generation and the token are goals that need evidence and legal review. Habitat and food are long-term goals with the energy bills shown above. Pilot it, test the numbers, or fork the paper. Contact Ashlynn through a GitHub issue on [Dastille/Stellar-Network](https://github.com/Dastille/Stellar-Network).
+Stellar Network keeps Ashlynn's path: free kit → earned expansions → habitat and food, worldwide. The evidence supports starting with free Starlink service (funded at $900–$1,800/household-yr depending on the plan available, plus hardware and installation still to be priced) and PV. TEGs as primary supply are not feasible; stove co-generation and the token are goals that need evidence and legal review. Habitat and food are long-term goals with the energy bills shown above. Pilot it, test the numbers, or fork the paper. Contact Ashlynn through a GitHub issue on [Dastille/Stellar-Network](https://github.com/Dastille/Stellar-Network).
 
 ## References
 

@@ -1,6 +1,6 @@
 # Source: Starlink Canada residential page (en-CA render)
 # URL: https://www.starlink.com/ca/residential
-# Accessed: 2026-10-18 02:10 America/New_York (EDT) (06:10:42Z); re-rendered 02:44 EDT with the same price text
+# Accessed: 2026-10-18 02:10 America/New_York (EDT) (06:10:42Z); re-rendered 02:44 EDT with the same price text; re-rendered 2026-10-19 09:28 America/New_York (EDT) with headless Chrome: same prices and the same SERVICE STARTING AT labels
 # Method: headless Chromium (Playwright) document innerText, locale en-CA. Raw capture lines: evidence/starlink-ca-2026-10-18.txt
 # Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
 ---
