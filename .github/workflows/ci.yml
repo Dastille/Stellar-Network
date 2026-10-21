@@ -1,0 +1,39 @@
+name: ci
+on:
+  # Dispatch-only: the account is on the GitHub Free plan and Actions minutes are capped.
+  # Checks run locally; receipts are posted on the PR. Do not re-add push/pull_request/schedule.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+jobs:
+  rust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo fmt --all -- --check
+      - name: clippy (all targets, pedantic, warnings denied)
+        run: cargo clippy --all-targets -- -D warnings -W clippy::pedantic
+      - run: cargo test --all-targets
+      - name: doctests
+        run: cargo test --doc
+      - name: documents equal a fresh render; every other number allowlisted
+        run: cargo test --test paper_sync
+      - name: committed documents are up to date (binary check)
+        run: cargo run -q -p stellar-model -- --check
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-audit
+      - run: cargo audit
+      - uses: EmbarkStudios/cargo-deny-action@v2
+        with:
+          command: check
+  msrv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.74
+      - run: cargo test

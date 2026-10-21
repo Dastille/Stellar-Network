@@ -1,0 +1,33 @@
+# Source: CSA Staff Notice 46-308, Securities Law Implications for Offerings of Tokens (2018-06-11)
+# URL: https://www.osc.ca/en/securities-law/instruments-rules-policies/4/46-308/csa-staff-notice-46-308-securities-law-implications-offerings-tokens
+# Accessed: 2026-10-18 03:15 America/New_York (EDT)
+# Method: curl (HTTP 200), script/style removed, HTML tags stripped, whitespace collapsed per line
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+{1}
+, including considering whether the offering involves:
+1. An investment of money
+2. In a common enterprise
+3. With the expectation of profit
+4. To come significantly from the efforts of others
+[...]
+We have received submissions from businesses and their professional advisors that a proposed offering of tokens does not involve securities because the tokens will be used in software, on an online platform or application, or to purchase goods and services. However, we have found that most of the offerings of tokens purporting to be utility tokens that we have reviewed to date have involved the distribution of a security, namely an investment contract. The fact that a token has a utility is not, on its own, determinative as to whether an offering involves the distribution of a security.
+[...]
+The examples that we have provided are intended to be illustrative and are based on situations that staff have seen to date. This list is not exhaustive and we expect that it will change over time, as the market and business models continue to evolve. Also, we emphasize that none of these examples should be interpreted as determinative on its own of whether or not a security exists. It is possible that an offering of tokens may be viewed as involving, or not involving, a security even with the existence, or absence, of one or more of the characteristics listed below. As such, businesses and their professional advisors should complete a meaningful analysis based on the unique characteristics of their offering of tokens and should not use the following table to complete a mechanical "tick the box" exercise.
+[...]
+Possible implications
+1.
+The proposed function of the token is to use software or an online platform or application, or to purchase goods and services, but the software, online platform or application or goods and services do not exist, are not yet available or are still in development.
+[...]
+9.
+The number of tokens issuable is finite or there is a reasonable expectation that access to new tokens will be limited in the future.
+As there is a limited or reduced supply of tokens, initial purchasers may have an expectation of profit as increased demand with limited or reduced supply should lead to an increase in price.
+[...]
+13.
+Tokens are distributed to users for free.
+The distribution of tokens for free will likely not involve an investment of money.
+However, the distribution of free tokens as part of an overall sale of an ancillary or secondary product or service, may involve an investment of money if it is appropriate to "look through" the token distribution to the investment of money in the overall offering.
+[...]
+Tokens reasonably expected or marketed to trade on cryptoasset trading platforms.
+Another situation that may have an implication on the presence of one or more of the elements of an investment contract is the fact that tokens are reasonably expected or marketed to trade on one or more cryptoasset trading platforms (including decentralized or "peer-to-peer" trading platforms) or to otherwise be freely tradeable in the secondary market.
+This fact indicates that purchasers may purchase the tokens with an expectation to resell them at a profit. This is particularly true where the existence of secondary trading is critical to the success of the offering of tokens or is featured prominently in the marketing of the offering.

@@ -1,0 +1,10 @@
+# Source: NRCan, Photovoltaic potential and solar resource maps of Canada, municip_potentiel-potential.csv
+# URL: https://open.canada.ca/data/en/dataset/8b434ac7-aedb-4698-90df-ba77424a551f
+# Accessed: 2026-10-18 (file retrieved 2026-10-18) America/New_York (EDT)
+# Method: curl of the open.canada.ca CSV resource; lines copied unchanged
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+Province,Municipality,Mois,South-facing with vertical (90 degrees) tilt,South-facing with latitude tilt,South-facing with tilt=latitude+15 degrees,South-facing with tilt=latitude-15 degrees,2-axis tracking,Horizontal (0 degree),,,,,,,,,,,
+[...]
+Ontario/Ontario,Toronto,December/Décembre,53,51,55,45,61,28,,,,,,,,,,,
+Ontario/Ontario,Toronto,Annual/Annuel,802,1163,1096,1174,1626,1013,,,,,,,,,,,

@@ -1,0 +1,13 @@
+# Source: Tecteg, TEG1-12611-6.0 product page
+# URL: https://tecteg.com/product/teg1-12611-6-0/
+# Accessed: 2026-10-18 03:06 America/New_York (EDT)
+# Method: WebFetch text extraction of the public page
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+| 1-9 | $56/pc |
+[...]
+| Hot Side Temperature(°C) | 300 |
+| Cold Side Temperature(°C) | 30 |
+[...]
+| Match Load Output Watts (W) | 14.6 |
+| Heat Flow Across the module Watts (W) | ~365 |

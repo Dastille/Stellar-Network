@@ -1,0 +1,17 @@
+# Source: Starlink Canada service plans page (en-CA render)
+# URL: https://www.starlink.com/ca/service-plans
+# Accessed: 2026-10-19 09:32 America/New_York (EDT)
+# Method: google-chrome --headless=new --lang=en-CA --virtual-time-budget=20000 --dump-dom; script/style removed, HTML tags stripped, whitespace collapsed per line
+# Verbatim excerpt of the retrieved text (Residential section); "[...]" marks omitted text. Not edited otherwise.
+---
+Monthly service plans
+Residential - 100 Mbps
+CA$75
+/mo
+Residential - 200 Mbps
+CA$115
+/mo
+Residential - Max
+CA$150
+/mo
+Users on Residential 100 Mbps and Residential 200 Mbps will be limited to download speeds of 100 Mbps and 200 Mbps respectively. Residential 100 Mbps and Residential 200 Mbps plans are only available in select areas. Residential Max users will experience maximum available speeds and top Residential network priority.

@@ -1,0 +1,13 @@
+# Source: Ontario Energy Board, Net metering
+# URL: https://oeb.ca/consumer-information-and-protection/net-metering
+# Accessed: 2026-10-18 03:00 America/New_York (EDT)
+# Method: WebFetch text extraction of the public page
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+With net metering, you can generate renewable electricity for your own use while sending excess power to the grid for a credit to offset your future electricity consumption.
+[...]
+The Net Metering program is established by the Ministry of Energy and is governed by the Regulation O. Reg. 541/05: NET METERING.
+[...]
+5. Your utility bills you for the electricity you consume from their grid, and gives you a credit on your electricity bill in return for the renewable electricity you sent to the grid. These credits can only be used to offset charges related to your electricity consumption (i.e., kWh of electricity you consumed) and cannot be applied to other types of charges on your bill.
+
+NOTE: Per section 8 (8) of the Net Metering Regulation, credits can only be carried over to future bills for up to 12 months, after which credits are reduced to $0.

@@ -1,0 +1,12 @@
+# Source: NRCan, Photovoltaic potential and solar resource maps of Canada, municip_kWh.csv
+# URL: https://open.canada.ca/data/en/dataset/8b434ac7-aedb-4698-90df-ba77424a551f
+# Accessed: 2026-10-18 (file retrieved 2026-10-18) America/New_York (EDT)
+# Method: curl of the open.canada.ca CSV resource; lines copied unchanged
+# Verbatim excerpt of the retrieved text; "[...]" marks omitted text. Not edited otherwise.
+---
+,,,Mean daily global insolation (kWh/m2),Mean daily global insolation (kWh/m2),Mean daily global insolation (kWh/m2),Mean daily global insolation (kWh/m2),Mean daily global insolation (kWh/m2),Mean daily global insolation (kWh/m2)
+[...]
+Province,Municipality,Mois,South-facing with vertical (90 degrees) tilt,South-facing with latitude tilt,South-facing with tilt=latitude+15 degrees,South-facing with tilt=latitude-15 degrees,2-axis tracking,Horizontal (0 degree)
+[...]
+Ontario/Ontario,Toronto,December/Décembre,2.26,2.21,2.35,1.95,2.64,1.19
+Ontario/Ontario,Toronto,Annual/Annuel,2.93,4.25,4,4.29,5.94,3.7

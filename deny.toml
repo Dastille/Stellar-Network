@@ -1,0 +1,28 @@
+# cargo-deny configuration (https://embarkstudios.github.io/cargo-deny/).
+# The crate has no dependencies; this file keeps it that way unless a reviewed
+# change adds one that passes every check below.
+
+[graph]
+all-features = true
+
+[advisories]
+# Fail on any RustSec advisory (vulnerability, unmaintained, unsound, yanked).
+version = 2
+yanked = "deny"
+
+[licenses]
+version = 2
+# Only the workspace crate's own licence is allowed today (there are no
+# dependencies). Adding a dependency with another licence requires a reviewed
+# change to this list.
+allow = ["AGPL-3.0-only"]
+confidence-threshold = 0.9
+
+[bans]
+multiple-versions = "deny"
+wildcards = "deny"
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]

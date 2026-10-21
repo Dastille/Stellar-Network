@@ -1,0 +1,33 @@
+# Source: Ontario Energy Board, Electricity rates (prices set for November 1, 2026; in effect from 2026-11-01, replacing the 2025-11-01 prices that apply through 2026-10-31, see oeb-rates-2025-11-01.txt)
+# URL: https://oeb.ca/consumer-information-and-protection/electricity-rates
+# Accessed: 2026-10-21 12:29 America/New_York (EDT)
+# Method: curl (HTTP 200), script/style removed, tags stripped, table cells joined by spaces, one line per row/paragraph
+# Verbatim excerpt of the retrieved text; contiguous block from the "Current prices" heading through the Tiered table. Not edited otherwise.
+---
+Current prices
+The TOU, ULO and Tiered prices set by the OEB for November 1, 2026, are shown in the table below. View historical electricity prices.
+Time-of-Use (TOU)
+TOU Price Periods Winter (November 1 - April 30)
+Summer (May 1 - October 31)
+TOU Prices (¢/kWh)
+Off-Peak Weekdays 7 p.m. – 7 a.m.
+Weekends and holidays all day Weekdays 7 p.m. – 7 a.m.
+Weekends and holidays all day 9.1
+Mid-Peak Weekdays 11 a.m. – 5 p.m. Weekdays 7 a.m. – 11 a.m. and 5 p.m. – 7 p.m. 14.6
+On-Peak Weekdays 7 a.m. – 11 a.m. and 5 p.m. – 7 p.m. Weekdays 11 a.m. – 5 p.m. 18.9
+Ultra-Low Overnight (ULO)
+ULO Price Periods All Year ULO Prices (¢/kWh)
+Ultra-Low Overnight Every day 11 p.m. - 7 a.m. 3.7
+Weekend Off-Peak Weekends and holidays 7 a.m. – 11 p.m. 9.1
+Mid-Peak Weekdays 7 a.m. – 4 p.m. and 9 p.m. to 11 p.m. 14.6
+On-Peak Weekdays 4 p.m. – 9 p.m. 37.7
+Tiered
+Tier Thresholds Winter (November 1 - April 30)
+Summer (May 1 - October 31)
+Tiered Prices (¢/kWh)
+Tier 1 Residential – first 1,000 kWh/month
+Non-residential – first 750 kWh/month Residential – first 600 kWh/month
+Non-residential – first 750 kWh/month 11.2
+Tier 2 Residential – for electricity used above 1,000 kWh/month
+Non-residential – for electricity used above 750 kWh/month Residential – for electricity used above 600 kWh/month
+Non-residential – for electricity used above 750 kWh/month 13.2

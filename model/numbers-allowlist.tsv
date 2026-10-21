@@ -1,0 +1,269 @@
+# Numbers in model/templates/ that are NOT model output. Every other number in a template must be a
+# {{placeholder}} rendered by the model. Checked by tests/paper_sync.rs::every_template_number_is_generated_or_allowlisted.
+# A row covers exactly one occurrence: the token at the position where `context` (text on the same line, around the token) matches. A second copy of the token needs its own row.
+# kind: quote = direct quote of a cited source; author = Ashlynn's (or an earlier rewrite's) figure, quoted as such;
+#       id = identifier (standard, clause, regulation, section, SKU, version, row/list number, product label);
+#       date = date or year; unit = exact unit or calendar constant in a stated formula.
+# A quote/author row may not equal a model-derived value (the test fails), so derived numbers cannot be allowlisted.
+# doc	token	context	kind	source or reason
+paper	2026-10-18	: Ashlynn ([Dastille]( )) · 2026-10-18 · License: AGPL	date	date or year
+paper	3.0	 2026-10-18 · License: AGPL-3.0*	id	licence version (AGPL-3.0)
+paper	2025-08-17	*Her v2.0 title (2025-08-17) was "Empowerin	date	date or year
+paper	80	d security. In Canada, over 80% of the rural p	quote	[CRTC-2026] "over 80% of the population in rural Canada"
+paper	2026	as broadband coverage [CRTC-2026], against the C	date	date or year
+paper	50	C-2026], against the CRTC's 50/10 Mbps objecti	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+paper	10	026], against the CRTC's 50/10 Mbps objective 	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+paper	2016-496	 50/10 Mbps objective [CRTC-2016-496], which leaves 	id	CRTC decision number
+paper	10	W solar, a used 10 kWh EV battery,	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	200	-class habitat modules** of 200–500 sq ft and *	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	500	ss habitat modules** of 200–500 sq ft and **hyd	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	2015	onics energy model [Barbosa-2015]. **Results.** 	date	date or year
+paper	1	household-year, or $ /yr at 1M households (K1	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	46-308	the token, CSA Staff Notice 46-308 says tokens dis	id	CSA Staff Notice number
+paper	46-308	ding could change that [CSA-46-308]. All of her id	id	CSA Staff Notice number
+paper	3	her ideas are kept. Section 3 states which ar	id	cross-reference number
+paper	1	## 1. Problem statem	id	section heading number
+paper	50	d meeting at least the CRTC 50/10 Mbps objecti	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+paper	10	eeting at least the CRTC 50/10 Mbps objective 	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+paper	2016-496	 50/10 Mbps objective [CRTC-2016-496], (b) a staged 	id	CRTC decision number
+paper	02	and 02:44 EDT, but not	date	time of day (EDT, or UTC where marked Z)
+paper	44	and 02:44 EDT, but not in	date	time of day (EDT, or UTC where marked Z)
+paper	02	n an en-US-locale render at 02:44 EDT or in Cl	date	time of day (EDT, or UTC where marked Z)
+paper	44	n en-US-locale render at 02:44 EDT or in Cloud	date	time of day (EDT, or UTC where marked Z)
+paper	02	udy's independent render at 02:32 EDT, and it 	date	time of day (EDT, or UTC where marked Z)
+paper	32	's independent render at 02:32 EDT, and it doe	date	time of day (EDT, or UTC where marked Z)
+paper	2026-10-18	lify (`evidence/starlink-ca-2026-10-18.txt`) [Starlink	date	date or year
+paper	0	old).** The household pays $0. The paper alwa	unit	zero by the definition of free
+paper	1	 per contribution (example: 1 token per kWh s	author	Ashlynn v2.0 (commit e812700), quoted as her figure (example rate)
+paper	5	nsions, with a burn rate of 5–15%, capped.	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	15	ions, with a burn rate of 5–15%, capped.	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	3	cations are used in section 3. A *goal* is ke	id	cross-reference number
+paper	2	## 2. Five-step requ	id	section heading number
+paper	5	ant or public fund (section 5) |	id	cross-reference number
+paper	6	e securities law** (section 6). Free distribu	id	cross-reference number
+paper	46-308	ding would change that [CSA-46-308] |	id	CSA Staff Notice number
+paper	3	hot and cold sides (section 3) |	id	cross-reference number
+paper	160	 Starlink states service in 160+ countries and 	quote	[Starlink-CA] "160+ countries, territories, and other markets"
+paper	46-308	IPEDA], securities law [CSA-46-308] and grid-conne	id	CSA Staff Notice number
+paper	3	## 3. Vision vs feas	id	section heading number
+paper	1	; areas not listed (section 1). Pro install i	id	cross-reference number
+paper	13	stment of money" (situation 13); a finite supp	id	cross-reference number
+paper	9	tation of profit (situation 9); trading on pl	id	cross-reference number
+paper	46-308	s to resale for profit [CSA-46-308] | **Probably n	id	CSA Staff Notice number
+paper	50	| Save $50–100/month | A	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	100	| Save $50–100/month | A	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	160	| Global reach | 160+ markets [Starl	quote	[Starlink-CA] "160+ countries, territories, and other markets"
+paper	4	## 4. Derivations (g	id	section heading number
+paper	100	December). This assumes 100% capture, so it	unit	ideal-collector assumption (all incident energy captured)
+paper	2015	) [Barbosa-2015].	date	date or year
+paper	1	- **Tariff:** OEB Tier 1 at	id	tariff tier name (Tier 1)
+paper	200	kWh/day load and the $200/month household	author	Ashlynn v1/v2, quoted as her figure (unsourced)
+paper	1	the Ontario Tier-1 commodity price	id	tariff tier name (Tier 1)
+paper	499	- **Hardware price.** The $499 Starlink kit pr	author	v2.2 README rewrite figure (not hers); not used
+paper	5	## 5. Implementation	id	section heading number
+paper	100	- **Growth.** 100K+ households ($	author	Ashlynn v2.0 (commit e812700), quoted as her figure (growth phase)
+paper	1	X/xAI network benefits at "$1B+ from 1M users	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	1	work benefits at "$1B+ from 1M users"; that f	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	6	## 6. Token: what CS	id	section heading number
+paper	46-308	oken: what CSA Staff Notice 46-308 says	id	CSA Staff Notice number
+paper	1	ether an offering involves (1) an investment 	id	CSA test element number
+paper	2	(1) an investment of money (2) in a common en	id	CSA test element number
+paper	3	(2) in a common enterprise (3) with the expec	id	CSA test element number
+paper	4	 the expectation of profit (4) to come signif	id	CSA test element number
+paper	46-308	ive, not determinative [CSA-46-308]. Applied to he	id	CSA Staff Notice number
+paper	13	e distribution.** Situation 13: "Tokens are di	id	cross-reference number
+paper	13	ld change that.** Situation 13 adds that free 	id	cross-reference number
+paper	9	tation of profit (situation 9). Tokens redeem	id	cross-reference number
+paper	1	tation of profit (situation 1). Tokens "reaso	id	cross-reference number
+paper	7	## 7. Security and p	id	section heading number
+paper	8	## 8. Prior work	id	section heading number
+paper	2016-496	l broadband targets.** CRTC 2016-496 sets the 50/10 	id	CRTC decision number
+paper	50	s.** CRTC 2016-496 sets the 50/10 Mbps unlimit	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+paper	10	* CRTC 2016-496 sets the 50/10 Mbps unlimited 	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+paper	2016-496	s unlimited objective [CRTC-2016-496]. CRTC CTMR 202	id	CRTC decision number
+paper	2026	 [CRTC-2016-496]. CRTC CTMR 2026 reports more th	date	date or year
+paper	96	CTMR 2026 reports more than 96% of Canadians w	quote	[CRTC-2026] "More than 96% of Canadians have access to USO-level Internet"
+paper	80	broadband coverage for over 80% of the rural p	quote	[CRTC-2026] "over 80% of the population in rural Canada"
+paper	2026	 the rural population [CRTC-2026].	date	date or year
+paper	2015	and yield.** Barbosa et al. 2015 [Barbosa-2015].	date	date or year
+paper	2015	arbosa et al. 2015 [Barbosa-2015].	date	date or year
+paper	46-308	regulation in Canada.** CSA 46-308 [CSA-46-308].	id	CSA Staff Notice number
+paper	46-308	n Canada.** CSA 46-308 [CSA-46-308].	id	CSA Staff Notice number
+paper	9	## 9. Limitations	id	section heading number
+paper	24	 lighting energy assumes "a 24-h photoperiod" 	quote	[Barbosa-2015] "assuming a 24-h photoperiod"
+paper	2015	 natural lighting" [Barbosa-2015, §2]. In a Cana	date	date or year
+paper	2	l lighting" [Barbosa-2015, §2]. In a Canadian	id	paper section number
+paper	499	tarlink power draw and the $499 hardware price 	author	v2.2 README rewrite figure (not hers); not used
+paper	10	## 10. Conclusion	id	section heading number
+paper	2015	- [Barbosa-2015] Barbosa G.L. e	date	date or year
+paper	12	ricultural Methods", IJERPH 12(6):6879–6891, 2	id	journal volume, issue and pages
+paper	6	ultural Methods", IJERPH 12(6):6879–6891, 201	id	journal volume, issue and pages
+paper	6879	ural Methods", IJERPH 12(6):6879–6891, 2015.	id	journal volume, issue and pages
+paper	6891	Methods", IJERPH 12(6):6879–6891, 2015.	id	journal volume, issue and pages
+paper	2015	s", IJERPH 12(6):6879–6891, 2015.	date	date or year
+paper	2016-496	- [CRTC-2016-496] Telecom Regula	id	CRTC decision number
+paper	2016-496	ecom Regulatory Policy CRTC 2016-496.	id	CRTC decision number
+paper	2026	- [CRTC-2026] CRTC, Canadian	date	date or year
+paper	2026	ommunications Market Report 2026, Executive summ	date	date or year
+paper	4.4	026, Executive summary and §4.4.	id	report section number
+paper	46-308	- [CSA-46-308] CSA Staff Noti	id	CSA Staff Notice number
+paper	46-308	SA-46-308] CSA Staff Notice 46-308, "Securities La	id	CSA Staff Notice number
+paper	2018-06-11	s for Offerings of Tokens", 2018-06-11, table "Example	date	date or year
+paper	1	mples of situations", items 1, 9 and 13, and 	id	cross-reference number
+paper	9	es of situations", items 1, 9 and 13, and the	id	cross-reference number
+paper	13	situations", items 1, 9 and 13, and the sectio	id	cross-reference number
+paper	160	hardware text, Pro install, 160+ markets), read	quote	[Starlink-CA] "160+ countries, territories, and other markets"
+paper	2026-10-18	nstall, 160+ markets), read 2026-10-18 02:10 and 02:44	date	date or year
+paper	02	+ markets), read 2026-10-18 02:10 and 02:44 ED	date	time of day (EDT, or UTC where marked Z)
+paper	10	arkets), read 2026-10-18 02:10 and 02:44 EDT (	date	time of day (EDT, or UTC where marked Z)
+paper	02	, read 2026-10-18 02:10 and 02:44 EDT (headles	date	time of day (EDT, or UTC where marked Z)
+paper	44	ead 2026-10-18 02:10 and 02:44 EDT (headless C	date	time of day (EDT, or UTC where marked Z)
+paper	2026-10-18	es in `evidence/starlink-ca-2026-10-18.txt`.	date	date or year
+paper	12611-6.0	- [Tecteg] TEG1-12611-6.0 product data.	id	Tecteg product model number
+paper	2026	ed or demoted by the August 2026 rewrites):**	date	date or year
+paper	46-308	- token status under CSA 46-308 (section 6)	id	CSA Staff Notice number
+paper	50	- "$50–100/month savin	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	100	- "$50–100/month savings" 	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	2	n avoids red tape" (section 2)	id	cross-reference number
+paper	1	- "$1B+" network bene	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	200	- $200/month household	author	Ashlynn v1/v2, quoted as her figure (unsourced)
+paper	1.5	- 1.5M households lac	author	Ashlynn v2.0 (commit e812700), quoted as her figure (unsourced, replaced)
+paper	20	- 20–30% emissions c	author	Ashlynn v2.0 (commit e812700), quoted as her figure (unsourced)
+paper	30	- 20–30% emissions cut	author	Ashlynn v2.0 (commit e812700), quoted as her figure (unsourced)
+paper	600	- $600/yr family savin	author	Ashlynn v2.0 (commit e812700), quoted as her figure (unsourced)
+readme	2025	 habitat and food (Ashlynn, 2025).	date	date or year
+readme	1	1. A **free, full	id	numbered-list item
+readme	2	2. Households **e	id	numbered-list item
+readme	3	3. Tokens pay for	id	numbered-list item
+readme	4	4. Long term: **S	id	numbered-list item
+readme	100	ost.** Starlink Residential 100 in Canada is **	id	Starlink plan name (Residential 100 / 200)
+readme	2026-10-18	*/mo (starlink.com/ca, read 2026-10-18). Free *service	date	date or year
+readme	46-308	n.** Under CSA Staff Notice 46-308, tokens given t	id	CSA Staff Notice number
+readme	3.0	License: [AGPL-3.0](LICENSE)	id	licence version (AGPL-3.0)
+claims	2026-10-18	cess date for every source: 2026-10-18 (America/New_Yo	date	date or year
+claims	3	## Spot-checks (3)	id	section heading number
+claims	1	1. **Item 1, Star	id	numbered-list item
+claims	1	1. **Item 1, Starlink price	id	numbered-list item
+claims	2026-10-18	at 2026-10-18T06:10:49Z (02:1	date	date or year
+claims	10	at 2026-10-18T06:10:49Z (02:10 EDT)	date	time of day (EDT, or UTC where marked Z)
+claims	49	at 2026-10-18T06:10:49Z (02:10 EDT) an	date	time of day (EDT, or UTC where marked Z)
+claims	02	at 2026-10-18T06:10:49Z (02:10 EDT) and aga	date	time of day (EDT, or UTC where marked Z)
+claims	10	at 2026-10-18T06:10:49Z (02:10 EDT) and again 	date	time of day (EDT, or UTC where marked Z)
+claims	06	9Z (02:10 EDT) and again at 06:44Z (02:44 EDT)	date	time of day (EDT, or UTC where marked Z)
+claims	44	(02:10 EDT) and again at 06:44Z (02:44 EDT). T	date	time of day (EDT, or UTC where marked Z)
+claims	02	0 EDT) and again at 06:44Z (02:44 EDT). The te	date	time of day (EDT, or UTC where marked Z)
+claims	44	DT) and again at 06:44Z (02:44 EDT). The text 	date	time of day (EDT, or UTC where marked Z)
+claims	100	e text reads "Residential - 100 Mbps CA$	id	Starlink plan name (Residential 100 / 200)
+claims	200	/mo · Residential - 200 Mbps CA$	id	Starlink plan name (Residential 100 / 200)
+claims	2	2. **Item 10, TEG	id	numbered-list item
+claims	10	2. **Item 10, TEG datasheet.	id	cross-reference number
+claims	3	3. **Item 15, hyd	id	numbered-list item
+claims	15	3. **Item 15, hydroponics.**	id	cross-reference number
+claims	2015	 hydroponics.** The Barbosa 2015 abstract reads 	date	date or year
+claims	6.1	± 6.1 kg/m2/y …	quote	[Barbosa-2015] reported standard deviation
+claims	11,000	± 11,000 kJ/kg/y", and §	quote	[Barbosa-2015] reported standard deviation
+claims	3	± 11,000 kJ/kg/y", and §3 reads "suppleme	id	cross-reference number
+claims	2100	± 2100 kJ/kg/y". **Pas	quote	[Barbosa-2015] reported standard deviation
+claims.tsv	100	Starlink Canada Residential 100 / 200 / Max = C	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	200	nk Canada Residential 100 / 200 / Max = CA$	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	100	Residential - 100 Mbps || CA$	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	200	|| Residential - 200 Mbps || CA$	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	02	present in en-CA renders at 02:10 and 02:44 ED	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	10	sent in en-CA renders at 02:10 and 02:44 EDT; 	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	02	 en-CA renders at 02:10 and 02:44 EDT; absent 	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	44	-CA renders at 02:10 and 02:44 EDT; absent in 	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	02	bsent in an en-US render at 02:44 EDT and in C	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	44	nt in an en-US render at 02:44 EDT and in Clou	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	02	T and in Cloudy's render at 02:32 EDT; qualify	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	32	nd in Cloudy's render at 02:32 EDT; qualifying	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	2026-10-18	ines: `evidence/starlink-ca-2026-10-18.txt`	date	date or year
+claims.tsv	160	Starlink serves 160+ countries, ter	quote	[Starlink-CA] "160+ countries, territories, and other markets"
+claims.tsv	160	160+ countries, ter	quote	[Starlink-CA] "160+ countries, territories, and other markets"
+claims.tsv	1	for 1k / 100k / 1M ho	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+claims.tsv	100	for 1k / 100k / 1M household	author	Ashlynn v2.0 (commit e812700), quoted as her figure (household scale)
+claims.tsv	499	$499 kit price (v2.2	author	v2.2 README rewrite figure (not hers); not used
+claims.tsv	802	tario,Toronto,Annual/Annuel,802, , || Ontario/O	quote	[NRCan-PV] municip_potentiel-potential.csv Toronto row (vertical-tilt column), quoted as an evidence needle
+claims.tsv	53	o,Toronto,December/Décembre,53, , || Ontario/O	quote	[NRCan-PV] municip_potentiel-potential.csv Toronto row (vertical-tilt column), quoted as an evidence needle
+claims.tsv	2.93	tario,Toronto,Annual/Annuel,2.93, , || Ontario/O	quote	[NRCan-PV] municip_kWh.csv Toronto row (vertical-tilt column), quoted as an evidence needle
+claims.tsv	2.26	o,Toronto,December/Décembre,2.26, ,	quote	[NRCan-PV] municip_kWh.csv Toronto row (vertical-tilt column), quoted as an evidence needle
+claims.tsv	1	Ontario Tier 1	id	tariff tier name (Tier 1)
+claims.tsv	12611-6.0	TEG module TEG1-12611-6.0:	id	Tecteg product model number
+claims.tsv	56	°C; US$56 (1–9 pcs)	quote	[Tecteg] "| 1-9 | $56/pc |"
+claims.tsv	1	°C; US$56 (1–9 pcs)	quote	[Tecteg] "| 1-9 | $56/pc |"
+claims.tsv	9	°C; US$56 (1–9 pcs)	quote	[Tecteg] "| 1-9 | $56/pc |"
+claims.tsv	12611-6.0	tecteg-teg1-12611-6.0.txt	id	Tecteg product model number
+claims.tsv	1-9	| || | 1-9 | $56/pc |	quote	[Tecteg] "| 1-9 | $56/pc |" (quantity break)
+claims.tsv	56	| || | 1-9 | $56/pc |	quote	[Tecteg] "| 1-9 | $56/pc |"
+claims.tsv	24	ighting; lighting assumes a 24-h photoperiod w	quote	[Barbosa-2015] "assuming a 24-h photoperiod"
+claims.tsv	2015	Barbosa et al. 2015, Abstract, §2 a	date	date or year
+claims.tsv	2	osa et al. 2015, Abstract, §2 and §3	id	paper section number
+claims.tsv	3	al. 2015, Abstract, §2 and §3	id	cross-reference number
+claims.tsv	2015	barbosa-2015.txt	date	date or year
+claims.tsv	6.1	± 6.1 kg/m2/y ||	quote	[Barbosa-2015] reported standard deviation
+claims.tsv	11,000	± 11,000 kJ/kg/y || supp	quote	[Barbosa-2015] reported standard deviation
+claims.tsv	2100	± 2100 kJ/kg/y || assu	quote	[Barbosa-2015] reported standard deviation
+claims.tsv	24	 2100 kJ/kg/y || assuming a 24-h photoperiod |	quote	[Barbosa-2015] "assuming a 24-h photoperiod"
+claims.tsv	1	¢ Ontario Tier 1 price; `model`	id	tariff tier name (Tier 1)
+claims.tsv	200	v1/v2 "households spending $200/month on basics	author	Ashlynn v1/v2, quoted as her figure (unsourced)
+claims.tsv	600	v2.0 "save $ –100/month", "$600/year"	author	Ashlynn v2.0 (commit e812700), quoted as her figure (unsourced)
+claims.tsv	1.5	v2.0 "1.5M households lac	author	Ashlynn v2.0 (commit e812700), quoted as her figure (unsourced, replaced)
+claims.tsv	2026	no source; CRTC CTMR 2026 executive summa	date	date or year
+claims.tsv	96	xecutive summary: more than 96% have USO-level	quote	[CRTC-2026] "More than 96% of Canadians have access to USO-level Internet"
+claims.tsv	80	ral broadband coverage over 80%	quote	[CRTC-2026] "over 80% of the population in rural Canada"
+claims.tsv	2026	crtc-ctmr-2026.txt	date	date or year
+claims.tsv	96	More than 96% of Canadians h	quote	[CRTC-2026] "More than 96% of Canadians have access to USO-level Internet"
+claims.tsv	80	 USO-level Internet || over 80% of the populat	quote	[CRTC-2026] "over 80% of the population in rural Canada"
+claims.tsv	50	iversal service objective = 50/10 Mbps + unlim	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+claims.tsv	10	rsal service objective = 50/10 Mbps + unlimite	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+claims.tsv	2016-496	ecom Regulatory Policy CRTC 2016-496, universal serv	id	CRTC decision number
+claims.tsv	2016-496	crtc-2016-496.txt	id	CRTC decision number
+claims.tsv	50	rvice objective || at least 50 megabits per se	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+claims.tsv	10	 second (Mbps) download and 10 Mbps upload || 	quote	[CRTC-2016-496] "at least 50 megabits per second (Mbps) download and 10 Mbps upload"
+claims.tsv	46-308	CSA Staff Notice 46-308, "When an offer	id	CSA Staff Notice number
+claims.tsv	46-308	csa-46-308.txt	id	CSA Staff Notice number
+claims.tsv	13	 another product (situation 13); finite supply	id	cross-reference number
+claims.tsv	9	tation of profit (situation 9); products not 	id	cross-reference number
+claims.tsv	1	ommon enterprise (situation 1); tokens market	id	cross-reference number
+claims.tsv	46-308	CSA Staff Notice 46-308, table "Example	id	CSA Staff Notice number
+claims.tsv	1	mples of situations", items 1, 9 and 13, and 	id	cross-reference number
+claims.tsv	9	es of situations", items 1, 9 and 13, and the	id	cross-reference number
+claims.tsv	13	situations", items 1, 9 and 13, and the sectio	id	cross-reference number
+claims.tsv	0.8	 power draw (v2.2 front-end 0.8 kWh/day)	author	v2.2 front-end figure (not hers); not used
+claims.tsv	1	v2.0 "$1B+ from 1M users	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+claims.tsv	1	v2.0 "$1B+ from 1M users"; "Green	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+claims.tsv	20	om 1M users"; "Green impact 20–30%"	author	Ashlynn v2.0 (commit e812700), quoted as her figure (unsourced)
+claims.tsv	30	1M users"; "Green impact 20–30%"	author	Ashlynn v2.0 (commit e812700), quoted as her figure (unsourced)
+claims.tsv	0	 || credits are reduced to $0	quote	[OEB-NM] "credits are reduced to $0"
+paper	6	s under CSA 46-308 (section 6)	id	section cross-reference
+claims.tsv	100	v2.0 "save $ –100/month", "$600/y	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	100	 cheapest plan, Residential 100, is "only avail	id	Starlink plan name (Residential 100 / 200)
+paper	1	ousehold-year, or $ B/yr at 1M households (K3	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+paper	100	d-yr (K1 floor, Residential 100 in select areas	id	Starlink plan name (Residential 100 / 200)
+paper	100	at" prices, and Residential 100 and 200 are "on	id	Starlink plan name (Residential 100 / 200)
+paper	200	es, and Residential 100 and 200 are "only avail	id	Starlink plan name (Residential 100 / 200)
+paper	1	unteer installers. Reaching 1M+ ($ –$ /yr ser	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+readme	1	year, or **$ ** per year at 1M households. Th	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+readme	100	arting at", and Residential 100 is "only availa	id	Starlink plan name (Residential 100 / 200)
+readme	1	ear, or **$ B** per year at 1M households. Ha	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+claims.tsv	100	E STARTING AT"; Residential 100 and 200 "only a	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	200	NG AT"; Residential 100 and 200 "only available	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	2026-10-18	s" (headless Chrome, en-CA; 2026-10-18 02:10 and 02:44	date	date or year
+claims.tsv	02	s Chrome, en-CA; 2026-10-18 02:10 and 02:44 ED	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	10	hrome, en-CA; 2026-10-18 02:10 and 02:44 EDT; 	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	02	en-CA; 2026-10-18 02:10 and 02:44 EDT; re-rend	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	44	CA; 2026-10-18 02:10 and 02:44 EDT; re-rendere	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	2026-10-19	 and 02:44 EDT; re-rendered 2026-10-19 09:28 and 09:32	date	date or year
+claims.tsv	09	EDT; re-rendered 2026-10-19 09:28 and 09:32 ED	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	09	ndered 2026-10-19 09:28 and 09:32 EDT); matche	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	32	red 2026-10-19 09:28 and 09:32 EDT); matches C	date	time of day (EDT, or UTC where marked Z)
+claims.tsv	100	 STARTING AT || Residential 100 Mbps and Reside	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	100	 /household-yr (Residential 100, select areas o	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	1	at 1M; hardware and 	author	Ashlynn v2.0 (commit e812700), quoted as her figure
+claims.tsv	100	; service only; Residential 100 total is a floo	id	Starlink plan name (Residential 100 / 200)
+claims.tsv	28	; re-rendered 2026-10-19 09:28 and 09:32 EDT);	date	time of day (EDT)
+claims.tsv	200	al 100 Mbps and Residential 200 Mbps plans are 	id	Starlink plan name (Residential 200)
+readme	1	at Ontario Tier 1 (OEB price	id	tariff tier name (Tier 1)
+claims.tsv	2025-11-01	oeb-rates.txt + oeb-rates-2025-11-01.txt	id	excerpt file name (OEB prices set for 2025-11-01)
+claims.tsv	1	set by the OEB for November 1, 2026	quote	[OEB] page heading "set by the OEB for November 1, 2026" quoted as an evidence needle
+claims.tsv	2026	the OEB for November 1, 2026 ||	quote	[OEB] page heading "set by the OEB for November 1, 2026" quoted as an evidence needle
+claims.tsv	750	Non-residential – first 750 kWh/month	quote	[OEB] rates table "first 750 kWh/month" quoted as an evidence needle
