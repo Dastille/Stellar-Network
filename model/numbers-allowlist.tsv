@@ -112,7 +112,6 @@ paper	2018-06-11	s for Offerings of Tokens", 2018-06-11, table "Example	date	dat
 paper	1	mples of situations", items 1, 9 and 13, and 	id	cross-reference number
 paper	9	es of situations", items 1, 9 and 13, and the	id	cross-reference number
 paper	13	situations", items 1, 9 and 13, and the sectio	id	cross-reference number
-paper	2025-11-01	y Board, Electricity rates (2025-11-01).	date	date or year
 paper	160	hardware text, Pro install, 160+ markets), read	quote	[Starlink-CA] "160+ countries, territories, and other markets"
 paper	2026-10-18	nstall, 160+ markets), read 2026-10-18 02:10 and 02:44	date	date or year
 paper	02	+ markets), read 2026-10-18 02:10 and 02:44 ED	date	time of day (EDT, or UTC where marked Z)
@@ -139,7 +138,6 @@ readme	3	3. Tokens pay for	id	numbered-list item
 readme	4	4. Long term: **S	id	numbered-list item
 readme	100	ost.** Starlink Residential 100 in Canada is **	id	Starlink plan name (Residential 100 / 200)
 readme	2026-10-18	*/mo (starlink.com/ca, read 2026-10-18). Free *service	date	date or year
-readme	1	h **$ /mo** at Ontario Tier 1.	id	tariff tier name (Tier 1)
 readme	46-308	n.** Under CSA Staff Notice 46-308, tokens given t	id	CSA Staff Notice number
 readme	3.0	License: [AGPL-3.0](LICENSE)	id	licence version (AGPL-3.0)
 claims	2026-10-18	cess date for every source: 2026-10-18 (America/New_Yo	date	date or year
@@ -189,8 +187,6 @@ claims.tsv	53	o,Toronto,December/Décembre,53, , || Ontario/O	quote	[NRCan-PV] m
 claims.tsv	2.93	tario,Toronto,Annual/Annuel,2.93, , || Ontario/O	quote	[NRCan-PV] municip_kWh.csv Toronto row (vertical-tilt column), quoted as an evidence needle
 claims.tsv	2.26	o,Toronto,December/Décembre,2.26, ,	quote	[NRCan-PV] municip_kWh.csv Toronto row (vertical-tilt column), quoted as an evidence needle
 claims.tsv	1	Ontario Tier 1	id	tariff tier name (Tier 1)
-claims.tsv	1	| Tier 1 | || Non-reside	id	tariff tier name (Tier 1)
-claims.tsv	750	 || Non-residential – first 750 kWh/month |	quote	[OEB-RPP] "Non-residential – first 750 kWh/month"
 claims.tsv	12611-6.0	TEG module TEG1-12611-6.0:	id	Tecteg product model number
 claims.tsv	56	°C; US$56 (1–9 pcs)	quote	[Tecteg] "| 1-9 | $56/pc |"
 claims.tsv	1	°C; US$56 (1–9 pcs)	quote	[Tecteg] "| 1-9 | $56/pc |"
@@ -266,3 +262,8 @@ claims.tsv	1	at 1M; hardware and 	author	Ashlynn v2.0 (commit e812700), quoted a
 claims.tsv	100	; service only; Residential 100 total is a floo	id	Starlink plan name (Residential 100 / 200)
 claims.tsv	28	; re-rendered 2026-10-19 09:28 and 09:32 EDT);	date	time of day (EDT)
 claims.tsv	200	al 100 Mbps and Residential 200 Mbps plans are 	id	Starlink plan name (Residential 200)
+readme	1	at Ontario Tier 1 (OEB price	id	tariff tier name (Tier 1)
+claims.tsv	2025-11-01	oeb-rates.txt + oeb-rates-2025-11-01.txt	id	excerpt file name (OEB prices set for 2025-11-01)
+claims.tsv	1	set by the OEB for November 1, 2026	quote	[OEB] page heading "set by the OEB for November 1, 2026" quoted as an evidence needle
+claims.tsv	2026	the OEB for November 1, 2026 ||	quote	[OEB] page heading "set by the OEB for November 1, 2026" quoted as an evidence needle
+claims.tsv	750	Non-residential – first 750 kWh/month	quote	[OEB] rates table "first 750 kWh/month" quoted as an evidence needle

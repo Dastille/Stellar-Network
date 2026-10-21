@@ -14,7 +14,7 @@ fn starlink_annual() {
 fn pv_400w() {
     let p = pv(400.0).unwrap();
     assert!((p.annual_kwh - 465.2).abs() < 1e-9);
-    assert!((p.value_cad_per_month - 4.652).abs() < 1e-9);
+    assert!((p.value_cad_per_month - 4.341_866_666_666_667).abs() < 1e-9);
     assert!(
         p.dec_daily_kwh < p.daily_kwh,
         "December must be below the annual mean"

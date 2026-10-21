@@ -24,8 +24,8 @@ Access date for every source: 2026-10-18 (America/New_York).
 | 5 | $499 kit price (v2.2 README) | not shown on the pages read | unverified (not used) |
 | 6 | "Home Pro Install Included" on Residential Max only | https://www.starlink.com/ca/residential, Residential - Max card | verified |
 | 7 | Toronto PV 1,163 kWh/kWp/yr; December 51 kWh/kWp; insolation 4.25 (annual) / 2.21 (Dec) kWh/m²/day | NRCan municip_potentiel-potential.csv and municip_kWh.csv, Ontario/Toronto, latitude tilt | verified |
-| 8 | 400 W → 465.2 kWh/yr, 1.27 kWh/day, 0.66 kWh/day in Dec, $4.65/mo | `model` P1–P4 | derived |
-| 9 | Ontario Tier 1 12.0 ¢/kWh | OEB electricity rates, Tiered table https://oeb.ca/consumer-information-and-protection/electricity-rates | verified |
+| 8 | 400 W → 465.2 kWh/yr, 1.27 kWh/day, 0.66 kWh/day in Dec, $4.34/mo | `model` P1–P4 | derived |
+| 9 | Ontario Tier 1 11.2 ¢/kWh (effective 2026-11-01; replaces the 2025-11-01 price, which applies through 2026-10-31) | OEB electricity rates, Tiered table https://oeb.ca/consumer-information-and-protection/electricity-rates | verified |
 | 10 | TEG module TEG1-12611-6.0: 14.6 W matched load, ~365 W heat flow at 300/30 °C; US$56 (1–9 pcs) | https://tecteg.com/product/teg1-12611-6-0/ product description table | verified |
 | 11 | v2.0 "5–10 × 60 W TEGs … 1.8–3.6 kWh/day" | = nameplate × 6 h (T3, T4); requires 45–90 kWh(th)/day at 300 °C (T3a, T4a) and ≥10.6–40.7 m² of ideal collectors (T3b–T4c); `model` | contradicted (as a household primary supply; arithmetic reproduced) |
 | 12 | Same energy from 0.56–1.13 kWp PV | `model` T3d, T4d | derived |
@@ -33,9 +33,9 @@ Access date for every source: 2026-10-18 (America/New_York).
 | 14 | Module material (e.g. Bi₂Te₃) | not stated on the cited datasheet page | unverified (removed from the paper) |
 | 15 | Hydroponic lettuce: 41 kg/m²/yr; 90,000 kJ/kg/yr total; 15,000 lighting; lighting assumes a 24-h photoperiod with half the radiation from natural light | Barbosa et al. 2015, Abstract, §2 and §3 https://doi.org/10.3390/ijerph120606879 (full text https://pmc.ncbi.nlm.nih.gov/articles/PMC4483736/) | verified |
 | 16 | v2.0 "50+ lbs/week greens" → 28.8 m², 81.0 kWh/day total, 13.5 lighting | `model` H1–H5 | derived (feasible only with that energy) |
-| 17 | v2.0 "13.88 kWh/day usage costs $2,000/year" | no source; implies $0.395/kWh (L2), which exceeds the 12.0 ¢ Ontario Tier 1 price; `model` | unverified (implied tariff exceeds the Ontario first-tier price) |
+| 17 | v2.0 "13.88 kWh/day usage costs $2,000/year" | no source; implies $0.395/kWh (L2), which exceeds the 11.2 ¢ Ontario Tier 1 price; `model` | unverified (implied tariff exceeds the Ontario first-tier price) |
 | 18 | v1/v2 "households spending $200/month on basics" | no source | unverified |
-| 19 | v2.0 "save $50–100/month", "$600/year" | 400 W saves $4.65/mo (P4), which is below the $50/mo low end; $50/mo needs 4.30 kWp (P5); `model` | contradicted (for the starter kit) |
+| 19 | v2.0 "save $50–100/month", "$600/year" | 400 W saves $4.34/mo (P4), which is below the $50/mo low end; $50/mo needs 4.61 kWp (P5); `model` | contradicted (for the starter kit) |
 | 20 | v2.0 "1.5M households lack reliable power/internet" | no source; CRTC CTMR 2026 executive summary: more than 96% have USO-level access; rural broadband coverage over 80% https://crtc.gc.ca/eng/publications/reports/PolicyMonitoring/2026/ctmr.htm | unverified (replaced by the CRTC figures) |
 | 21 | CRTC universal service objective = 50/10 Mbps + unlimited data option | Telecom Regulatory Policy CRTC 2016-496, universal service objective https://crtc.gc.ca/eng/archive/2016/2016-496.htm | verified |
 | 22 | CSA: most "utility" tokens reviewed involved securities; four-part investment-contract test; examples illustrative, not determinative | CSA Staff Notice 46-308, "When an offering of tokens may or may not involve an offering of securities" https://www.osc.ca/en/securities-law/instruments-rules-policies/4/46-308/csa-staff-notice-46-308-securities-law-implications-offerings-tokens | verified |

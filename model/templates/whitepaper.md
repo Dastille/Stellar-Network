@@ -127,7 +127,7 @@ Stellar Network keeps Ashlynn's path: free kit → earned expansions → habitat
 - [CSA-46-308] CSA Staff Notice 46-308, "Securities Law Implications for Offerings of Tokens", 2018-06-11, table "Examples of situations", items 1, 9 and 13, and the section on trading platforms. https://www.osc.ca/en/securities-law/instruments-rules-policies/4/46-308/csa-staff-notice-46-308-securities-law-implications-offerings-tokens
 - [NRCan-PV] NRCan, Photovoltaic potential and solar resource maps of Canada, municipal CSVs (municip_potentiel-potential.csv; municip_kWh.csv). https://open.canada.ca/data/en/dataset/8b434ac7-aedb-4698-90df-ba77424a551f
 - [OEB-NM] Ontario Energy Board, Net metering. https://oeb.ca/consumer-information-and-protection/net-metering
-- [OEB-RPP] Ontario Energy Board, Electricity rates (2025-11-01). https://oeb.ca/consumer-information-and-protection/electricity-rates
+- [OEB-RPP] Ontario Energy Board, Electricity rates, prices effective {{oeb.effective}} (the paper uses these rather than the {{oeb.prior_start}} prices, which apply through {{oeb.prior_end}}). https://oeb.ca/consumer-information-and-protection/electricity-rates
 - [PIPEDA] https://laws-lois.justice.gc.ca/eng/acts/P-8.6/
 - [Starlink-CA] https://www.starlink.com/ca/service-plans (prices) and https://www.starlink.com/ca/residential (hardware text, Pro install, 160+ markets), read 2026-10-18 02:10 and 02:44 EDT (headless Chromium); captured lines in `evidence/starlink-ca-2026-10-18.txt`.
 - [Tecteg] TEG1-12611-6.0 product data. https://tecteg.com/product/teg1-12611-6-0/

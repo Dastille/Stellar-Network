@@ -6,7 +6,7 @@
 
 ## Abstract
 
-**Problem.** Rural and self-sufficiency-seeking households, worldwide (her v2.0 scope), lack affordable connectivity, power and food security. In Canada, over 80% of the rural population now has broadband coverage [CRTC-2026], against the CRTC's 50/10 Mbps objective [CRTC-2016-496], which leaves the rest underserved. **Proposal (Ashlynn, v2.0).** Give each household a **free, fully installed Starlink kit**. The household then **earns tokens** by sharing energy, data and compute, and spends them on expansions: 400 W solar, a used 10 kWh EV battery, **thermoelectric generators (TEGs)** with heat storage, and **methane backup**. Over time the path extends to **Starship-class habitat modules** of 200–500 sq ft and **hydroponic food** of about 50 lb/week of greens, all installed by volunteers and governed by guardian software and user vetoes. **Method.** We run a five-step requirements review and a first-principles derivation of each element. The inputs are the live starlink.com/ca price list, NRCan solar tables, the OEB tariff, a commercial TEG datasheet [Tecteg], and a peer-reviewed hydroponics energy model [Barbosa-2015]. **Results.** Free *service* costs a funder at least CA$900 per household-year, or $900,000,000/yr at 1M households (K1, K6): Starlink lists every price as "SERVICE STARTING AT", and the cheapest plan, Residential 100, is "only available in select areas" [Starlink-CA]. Where only Residential Max is offered, the cost is CA$1,800 per household-year, or $1.8B/yr at 1M households (K3, K9); hardware and installation are not costed, because no per-household price was verified. A 400 W panel yields 1.27 kWh/day in Toronto (0.66 in December), worth $4.65/mo. Her TEG figure of 1.8–3.6 kWh/day is the nameplate arithmetic of 5–10 × 60 W × 6 h. At the datasheet's 4.0% efficiency it needs 45–90 kWh of 300 °C heat per day, while 0.56–1.13 kWp of PV delivers the same energy. 50 lb/week of hydroponic greens needs about 28.8 m² and 13.5 kWh/day for lighting alone. On the token, CSA Staff Notice 46-308 says tokens distributed to users for free "will likely not involve an investment of money", so her earned token, as long as it is never sold, is probably not a security; selling tokens, bundling them with a paid product, or marketing them for trading could change that [CSA-46-308]. All of her ideas are kept. Section 3 states which are feasible now and what would have to change for the rest.
+**Problem.** Rural and self-sufficiency-seeking households, worldwide (her v2.0 scope), lack affordable connectivity, power and food security. In Canada, over 80% of the rural population now has broadband coverage [CRTC-2026], against the CRTC's 50/10 Mbps objective [CRTC-2016-496], which leaves the rest underserved. **Proposal (Ashlynn, v2.0).** Give each household a **free, fully installed Starlink kit**. The household then **earns tokens** by sharing energy, data and compute, and spends them on expansions: 400 W solar, a used 10 kWh EV battery, **thermoelectric generators (TEGs)** with heat storage, and **methane backup**. Over time the path extends to **Starship-class habitat modules** of 200–500 sq ft and **hydroponic food** of about 50 lb/week of greens, all installed by volunteers and governed by guardian software and user vetoes. **Method.** We run a five-step requirements review and a first-principles derivation of each element. The inputs are the live starlink.com/ca price list, NRCan solar tables, the OEB tariff, a commercial TEG datasheet [Tecteg], and a peer-reviewed hydroponics energy model [Barbosa-2015]. **Results.** Free *service* costs a funder at least CA$900 per household-year, or $900,000,000/yr at 1M households (K1, K6): Starlink lists every price as "SERVICE STARTING AT", and the cheapest plan, Residential 100, is "only available in select areas" [Starlink-CA]. Where only Residential Max is offered, the cost is CA$1,800 per household-year, or $1.8B/yr at 1M households (K3, K9); hardware and installation are not costed, because no per-household price was verified. A 400 W panel yields 1.27 kWh/day in Toronto (0.66 in December), worth $4.34/mo. Her TEG figure of 1.8–3.6 kWh/day is the nameplate arithmetic of 5–10 × 60 W × 6 h. At the datasheet's 4.0% efficiency it needs 45–90 kWh of 300 °C heat per day, while 0.56–1.13 kWp of PV delivers the same energy. 50 lb/week of hydroponic greens needs about 28.8 m² and 13.5 kWh/day for lighting alone. On the token, CSA Staff Notice 46-308 says tokens distributed to users for free "will likely not involve an investment of money", so her earned token, as long as it is never sold, is probably not a security; selling tokens, bundling them with a paid product, or marketing them for trading could change that [CSA-46-308]. All of her ideas are kept. Section 3 states which are feasible now and what would have to change for the rest.
 
 ## 1. Problem statement and definitions
 
@@ -45,7 +45,7 @@ Deliver to a household, at no upfront cost to it, (a) broadband meeting at least
 | Methane backup | No primary source yet | **Unverified** | Cold-climate digester data; gas-code compliance |
 | Starship Mars Habitat Modules | No product found | **No** (no product) | A SpaceX product, or CHOAM units as the terrestrial step |
 | Hydroponic food, 50 lb/week | 28.8 m²; lighting 13.5 kWh/day = 10.6 × 400 W panels (H5); total 81.0 kWh/day in the Arizona model | **Partly** (smaller scale) | Size food to the household's energy, e.g. a greenhouse with daylight |
-| Save $50–100/month | A 400 W panel saves $4.65/mo, which is below the $50/mo low end (P4); $50/mo needs 4.30 kWp (P5) | **No** for the starter kit | Larger PV, or savings counted against the household's prior internet bill (unsourced) |
+| Save $50–100/month | A 400 W panel saves $4.34/mo, which is below the $50/mo low end (P4); $50/mo needs 4.61 kWp (P5) | **No** for the starter kit | Larger PV, or savings counted against the household's prior internet bill (unsourced) |
 | Global reach | 160+ markets [Starlink-CA] | **Yes** (service exists) | Per-country price and law |
 | Anti-corruption: blockchain, user vetoes | — | Design goal | Public ledger of rule changes; vetoes as specified governance |
 | SpaceX/xAI partnership (her pitch) | Independent proposal; not affiliated or endorsed | Proposal stands | A partner's agreement |
@@ -56,7 +56,7 @@ Chains (the Chain column below is built from the same constants as the Value col
 - **PV:** kWh = kWp × NRCan kWh/kWp (Toronto, latitude tilt: 1,163/yr; December 51/month) [NRCan-PV].
 - **TEG:** heat = electricity / efficiency, with efficiency = 14.6 W / 365 W at hot side 300 °C and cold side 30 °C [Tecteg]. Collector area = heat / NRCan insolation (4.25 kWh/m²/day annual; 2.21 December). This assumes 100% capture, so it is a lower bound.
 - **Hydroponics:** yield 41 kg/m²/yr and energy 90,000 kJ/kg (lighting 15,000) [Barbosa-2015].
-- **Tariff:** OEB Tier 1 at 12.0 ¢/kWh [OEB-RPP].
+- **Tariff:** OEB Tier 1 at 11.2 ¢/kWh [OEB-RPP].
 - **Starlink:** CA$75 / $115 / $150 per month, from starlink.com/ca/service-plans, read 2026-10-18 02:10 EDT [Starlink-CA]. K rows cost **service only**. Prices are "starting at" prices, and Residential 100 and 200 are "only available in select areas" (starlink.com/ca/service-plans), so K4–K6 are floors and K7–K9 are the Max-plan bound.
 
 <!-- BEGIN GENERATED BY stellar-model (cargo run -q -p stellar-model) -->
@@ -74,8 +74,8 @@ Chains (the Chain column below is built from the same constants as the Value col
 | P1 | 400 W panel, annual yield (Toronto) | 465.2 kWh/yr | 0.4 x 1163 |
 | P2 | 400 W panel, mean daily | 1.27 kWh/day | P1 / 365 |
 | P3 | 400 W panel, December daily | 0.66 kWh/day | 0.4 x 51 / 31 |
-| P4 | 400 W panel, value at Tier 1 | $4.65/mo | P1 x 0.120 / 12 |
-| P5 | PV needed to save $50/mo at Tier 1 | 4.30 kWp | (600 / 0.120) / 1163 |
+| P4 | 400 W panel, value at Tier 1 | $4.34/mo | P1 x 0.112 / 12 |
+| P5 | PV needed to save $50/mo at Tier 1 | 4.61 kWp | (600 / 0.112) / 1163 |
 | T1 | TEG module efficiency (datasheet) | 4.0% | 14.6 W / 365 W |
 | T2 | Datasheet modules per "60 W TEG" | 4.11 | 60 / 14.6 |
 | T3 | 5 x 60 W TEG x 6 h at rated dT | 1.8 kWh(e)/day | 5 x 60 x 6 / 1000 |
@@ -95,11 +95,11 @@ Chains (the Chain column below is built from the same constants as the Value col
 | H5 | 400 W panels to cover lighting only (annual mean) | 10.6 | H4 / P2 |
 | L1 | 13.88 kWh/day load, annual | 5066 kWh/yr | 13.88 x 365 |
 | L2 | Tariff implied by "$2,000/yr" | $0.395/kWh | 2000 / L1 |
-| L3 | Same load at Ontario Tier 1 | $608/yr | L1 x 0.120 |
+| L3 | Same load at Ontario Tier 1 | $567/yr | L1 x 0.112 |
 <!-- END GENERATED -->
 
 Notes:
-- **L1–L3.** The 13.88 kWh/day load and the $200/month household spend come from her v1/v2 drafts and have no source. L2 shows that "$2,000/yr" implies $0.395/kWh, which exceeds the Ontario Tier-1 commodity price of 12.0 ¢/kWh (about 3.3× it).
+- **L1–L3.** The 13.88 kWh/day load and the $200/month household spend come from her v1/v2 drafts and have no source. L2 shows that "$2,000/yr" implies $0.395/kWh, which exceeds the Ontario Tier-1 commodity price of 11.2 ¢/kWh (about 3.5× it).
 - **Hardware price.** The $499 Starlink kit price (v2.2 README) is not shown on the pages read, so it is not used.
 
 ## 5. Implementation plan (hers, with funding named)
@@ -164,7 +164,7 @@ Stellar Network keeps Ashlynn's path: free kit → earned expansions → habitat
 - [CSA-46-308] CSA Staff Notice 46-308, "Securities Law Implications for Offerings of Tokens", 2018-06-11, table "Examples of situations", items 1, 9 and 13, and the section on trading platforms. https://www.osc.ca/en/securities-law/instruments-rules-policies/4/46-308/csa-staff-notice-46-308-securities-law-implications-offerings-tokens
 - [NRCan-PV] NRCan, Photovoltaic potential and solar resource maps of Canada, municipal CSVs (municip_potentiel-potential.csv; municip_kWh.csv). https://open.canada.ca/data/en/dataset/8b434ac7-aedb-4698-90df-ba77424a551f
 - [OEB-NM] Ontario Energy Board, Net metering. https://oeb.ca/consumer-information-and-protection/net-metering
-- [OEB-RPP] Ontario Energy Board, Electricity rates (2025-11-01). https://oeb.ca/consumer-information-and-protection/electricity-rates
+- [OEB-RPP] Ontario Energy Board, Electricity rates, prices effective 2026-11-01 (the paper uses these rather than the 2025-11-01 prices, which apply through 2026-10-31). https://oeb.ca/consumer-information-and-protection/electricity-rates
 - [PIPEDA] https://laws-lois.justice.gc.ca/eng/acts/P-8.6/
 - [Starlink-CA] https://www.starlink.com/ca/service-plans (prices) and https://www.starlink.com/ca/residential (hardware text, Pro install, 160+ markets), read 2026-10-18 02:10 and 02:44 EDT (headless Chromium); captured lines in `evidence/starlink-ca-2026-10-18.txt`.
 - [Tecteg] TEG1-12611-6.0 product data. https://tecteg.com/product/teg1-12611-6-0/

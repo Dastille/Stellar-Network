@@ -44,8 +44,14 @@ pub const TORONTO_INSOL_ANNUAL: f64 = 4.25;
 /// Same file, December, latitude tilt (kWh/m2/day).
 pub const TORONTO_INSOL_DEC: f64 = 2.21;
 
-/// OEB RPP Tier 1, effective 2025-11-01: 12.0 cents/kWh (commodity only).
-pub const ONTARIO_TIER1_CAD_PER_KWH: f64 = 0.120;
+/// OEB RPP Tier 1, effective 2026-11-01: 11.2 cents/kWh (commodity only).
+/// Replaces the 2025-11-01 price (12.0 cents/kWh), which applies through
+/// 2026-10-31; both excerpts are kept in `sources/`.
+pub const ONTARIO_TIER1_CAD_PER_KWH: f64 = 0.112;
+/// Date the OEB price above takes effect.
+pub const OEB_PRICES_EFFECTIVE: &str = "2026-11-01";
+/// First and last day of the superseded OEB price period.
+pub const OEB_PRIOR_PRICES: (&str, &str) = ("2025-11-01", "2026-10-31");
 
 /// Tecteg TEG1-12611-6.0 (56x56 mm) at hot 300 C / cold 30 C:
 /// matched-load output 14.6 W. <https://tecteg.com/product/teg1-12611-6-0/>
@@ -585,6 +591,9 @@ pub fn values() -> Result<Vec<Value>, ModelError> {
         input("starlink.res200", format!("{STARLINK_CA_RES200:.0}")),
         input("starlink.max", format!("{STARLINK_CA_MAX:.0}")),
         input("starlink.accessed", STARLINK_ACCESSED.to_string()),
+        input("oeb.effective", OEB_PRICES_EFFECTIVE.to_string()),
+        input("oeb.prior_start", OEB_PRIOR_PRICES.0.to_string()),
+        input("oeb.prior_end", OEB_PRIOR_PRICES.1.to_string()),
         input("nrcan.kwh_per_kwp", grouped(TORONTO_PV_KWH_PER_KWP_YR, 0)),
         input(
             "nrcan.kwh_per_kwp_raw",
